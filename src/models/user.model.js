@@ -19,7 +19,31 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
 
-    // forgot password
+    userType: {
+      type: String,
+      enum: ["learner", "tutor"],
+      default: "learner",
+    },
+
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
+
+    isDeleted: {
+      type: Boolean,
+      default: false,
+    },
+
+    lastLogin: {
+      type: Date,
+    },
+
     forgotOtp: String,
     forgotOtpExpiry: Date,
   },

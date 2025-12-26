@@ -3,15 +3,14 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { sendOtpEmail } from "../utils/emails.js";
 
-
-/* ========= SIGNUP ========= */
-const signup = async ({ name, email, password }) => {
+/* SIGNUP */
+const signup = async ({ name, email, password, userType }) => {
   if (!name || !email || !password) {
     throw "All fields are required";
   }
 
-  const userExist = await User.findOne({ email });
-  if (userExist) throw "User already exists";
+  const exists = await User.findOne({ email });
+  if (exists) throw "User already exists";
 
   const hash = await bcrypt.hash(password, 10);
 
@@ -19,16 +18,20 @@ const signup = async ({ name, email, password }) => {
     name,
     email,
     password: hash,
+    userType: userType || "learner",
   });
 };
 
-/* ========= LOGIN ========= */
+/* LOGIN */
 const login = async ({ email, password }) => {
   const user = await User.findOne({ email });
   if (!user) throw "Invalid credentials";
 
   const match = await bcrypt.compare(password, user.password);
   if (!match) throw "Invalid credentials";
+
+  user.lastLogin = new Date();
+  await user.save();
 
   return jwt.sign(
     { id: user._id },
@@ -37,10 +40,8 @@ const login = async ({ email, password }) => {
   );
 };
 
-/* ========= FORGOT PASSWORD ========= */
+/* FORGOT PASSWORD */
 const forgotPassword = async ({ email }) => {
-  if (!email) throw "Email required";
-
   const user = await User.findOne({ email });
   if (!user) throw "User not found";
 
@@ -52,21 +53,15 @@ const forgotPassword = async ({ email }) => {
 
   await sendOtpEmail(user.email, otp);
 
-  return {
-    message: "OTP sent to your email",
-  };
+  return { message: "OTP sent to your email" };
 };
 
-
-/* ========= VERIFY OTP ========= */
+/* VERIFY OTP */
 const verifyOtp = async ({ email, otp }) => {
   const user = await User.findOne({ email });
   if (!user) throw "User not found";
 
-  if (
-    user.forgotOtp !== otp ||
-    user.forgotOtpExpiry < Date.now()
-  ) {
+  if (user.forgotOtp !== otp || user.forgotOtpExpiry < Date.now()) {
     throw "Invalid or expired OTP";
   }
 
@@ -83,12 +78,9 @@ const verifyOtp = async ({ email, otp }) => {
   return resetToken;
 };
 
-/* ========= RESET PASSWORD ========= */
+/* RESET PASSWORD */
 const resetPassword = async ({ token, password }) => {
-  const decoded = jwt.verify(
-    token,
-    process.env.FORGOT_PASSWORD_SECRET
-  );
+  const decoded = jwt.verify(token, process.env.FORGOT_PASSWORD_SECRET);
 
   const user = await User.findById(decoded.id);
   if (!user) throw "User not found";
