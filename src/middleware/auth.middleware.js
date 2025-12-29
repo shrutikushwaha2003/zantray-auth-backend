@@ -1,20 +1,15 @@
 import jwt from "jsonwebtoken";
+import CustomError from "../utils/CustomError.js";
 
 const authMiddleware = (req, res, next) => {
-  const authHeader = req.headers.authorization;
-
-  if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    return res.status(401).json({ message: "Unauthorized" });
-  }
-
-  const token = authHeader.split(" ")[1];
+  const token = req.headers.authorization?.split(" ")[1];
+  if (!token) throw new CustomError("Unauthorized", 401);
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = { id: decoded.id };
+    req.user = jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch {
-    res.status(401).json({ message: "Invalid token" });
+    throw new CustomError("Invalid token", 401);
   }
 };
 
