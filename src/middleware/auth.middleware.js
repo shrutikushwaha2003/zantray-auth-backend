@@ -1,16 +1,20 @@
 import jwt from "jsonwebtoken";
-import CustomError from "../utils/CustomError.js";
 
-const authMiddleware = (req, res, next) => {
-  const token = req.headers.authorization?.split(" ")[1];
-  if (!token) throw new CustomError("Unauthorized", 401);
-
+const auth = (req, res, next) => {
   try {
-    req.user = jwt.verify(token, process.env.JWT_SECRET);
+    const authHeader = req.headers.authorization;
+    if (!authHeader) {
+      return res.status(401).json({ success: false, message: "No token provided" });
+    }
+
+    const token = authHeader.split(" ")[1];
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    req.user = decoded;
     next();
-  } catch {
-    throw new CustomError("Invalid token", 401);
+  } catch (err) {
+    return res.status(401).json({ success: false, message: "Invalid token" });
   }
 };
 
-export default authMiddleware;
+export default auth;

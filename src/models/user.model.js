@@ -14,7 +14,10 @@ const userSchema = new mongoose.Schema(
     forgotOtpExpiry: Date,
     lastLogin: Date,
   },
-  { timestamps: true }
+  { timestamps: true ,
+    collection: "users"
+
+  },
 );
 
 export default mongoose.model("User", userSchema);

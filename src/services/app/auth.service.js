@@ -2,16 +2,14 @@ import User from "../../models/user.model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import CustomError from "../../utils/CustomError.js";
-
-/* SIGNUP */
 import { sendOtpEmail } from "../../utils/emails.js";
 
+/* SIGNUP */
 export const signup = async ({ name, email, password }) => {
   const exists = await User.findOne({ email });
   if (exists) throw new CustomError("User already exists", 400);
 
   const hash = await bcrypt.hash(password, 10);
-
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
   await User.create({
@@ -21,15 +19,44 @@ export const signup = async ({ name, email, password }) => {
     forgotOtp: otp,
     forgotOtpExpiry: Date.now() + 10 * 60 * 1000,
     isVerified: false,
-    isActive: true,
-    isDeleted: false,
   });
 
-  
   await sendOtpEmail(email, otp);
-
-  return true;
 };
+export const verifyOtpCommon = async ({ email, otp, purpose }) => {
+  const user = await User.findOne({ email });
+  if (!user) throw new CustomError("User not found", 404);
+
+  if (
+    String(user.forgotOtp) !== String(otp) ||
+    user.forgotOtpExpiry < Date.now()
+  ) {
+    throw new CustomError("Invalid or expired OTP", 400);
+  }
+
+  // SIGNUP FLOW
+  if (purpose === "SIGNUP") {
+    user.isVerified = true;
+  }
+
+  // clear OTP
+  user.forgotOtp = null;
+  user.forgotOtpExpiry = null;
+  await user.save();
+
+  // reset token ONLY for forgot password
+  if (purpose === "FORGOT_PASSWORD") {
+    const resetToken = jwt.sign(
+      { id: user._id },
+      process.env.FORGOT_PASSWORD_SECRET,
+      { expiresIn: "10m" }
+    );
+    return resetToken;
+  }
+
+  return null;
+};
+;
 
 
 /* LOGIN */
@@ -37,15 +64,11 @@ export const login = async ({ email, password }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);
 
-
-  if (!user.isVerified) {
+  if (!user.isVerified)
     throw new CustomError("Please verify OTP before login", 403);
-  }
 
-
-  if (user.isDeleted || !user.isActive) {
-    throw new CustomError("Account is inactive", 403);
-  }
+  if (!user.isActive || user.isDeleted)
+    throw new CustomError("Account inactive", 403);
 
   const match = await bcrypt.compare(password, user.password);
   if (!match) throw new CustomError("Invalid credentials", 401);
@@ -63,24 +86,13 @@ export const forgotPassword = async ({ email }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);
 
-  user.forgotOtp = Math.floor(100000 + Math.random() * 900000).toString();
+  const otp = Math.floor(100000 + Math.random() * 900000).toString();
+
+  user.forgotOtp = otp;
   user.forgotOtpExpiry = Date.now() + 10 * 60 * 1000;
   await user.save();
-};
 
-/* VERIFY OTP (COMMON) */
-export const verifyOtpCommon = async ({ email, otp }) => {
-  const user = await User.findOne({ email });
-  if (!user) throw new CustomError("User not found", 404);
-
-  if (user.forgotOtp !== otp || user.forgotOtpExpiry < Date.now()) {
-    throw new CustomError("Invalid or expired OTP", 400);
-  }
-
-  user.isVerified = true;
-  user.forgotOtp = null;
-  user.forgotOtpExpiry = null;
-  await user.save();
+  await sendOtpEmail(email, otp);
 };
 
 /* RESET PASSWORD */
@@ -93,18 +105,12 @@ export const resetPassword = async ({ token, password }) => {
   await user.save();
 };
 
-
 /* DELETE PROFILE */
-
 export const deleteProfile = async ({ email }) => {
   const user = await User.findOne({ email });
-  if (!user) {
-    throw new CustomError("User not found", 404);
-  }
+  if (!user) throw new CustomError("User not found", 404);
 
   user.isDeleted = true;
   user.isActive = false;
-
   await user.save();
 };
-

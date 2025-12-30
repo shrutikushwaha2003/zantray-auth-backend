@@ -6,7 +6,7 @@ import CustomError from "../../utils/CustomError.js";
 export const signup = async (req, res) => {
   try {
     await service.signup(req.body);
-    successResponse(res, { message: "Signup successful" });
+    successResponse(res, { message: "Signup successful. Otp has been send in your email please verify your account" });
   } catch (e) {
     errorResponse(res, e);
   }
@@ -43,10 +43,14 @@ export const forgotPassword = async (req, res) => {
 
 export const verifyOtp = async (req, res) => {
   try {
-    await service.verifyOtpCommon(req.body);
-    successResponse(res, { message: "OTP verified" });
-  } catch (e) {
-    errorResponse(res, e);
+    const resetToken = await service.verifyOtpCommon(req.body);
+
+    successResponse(res, {
+      message: "OTP verified successfully",
+      ...(resetToken && { data: { resetToken } }),
+    });
+  } catch (err) {
+    errorResponse(res, err);
   }
 };
 
