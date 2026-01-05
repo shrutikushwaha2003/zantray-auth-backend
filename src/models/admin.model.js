@@ -12,11 +12,18 @@ const adminSchema = new mongoose.Schema(
 
     password: { type: String, required: true },
 
-    // 🔥 ADD THESE
+    // 🔐 Login OTP (2FA)
+    otp: {
+      type: String,
+    },
+    otpExpiry: {
+      type: Number,
+    },
+
+    // 🔁 Forgot password OTP
     forgotOtp: {
       type: String,
     },
-
     forgotOtpExpiry: {
       type: Number,
     },

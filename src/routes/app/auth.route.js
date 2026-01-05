@@ -1,16 +1,16 @@
 import express from "express";
-import * as c from "../../controllers/app/auth.controllers.js";
+import * as controller from "../../controllers/app/auth.controllers.js";
 import auth from "../../middleware/auth.middleware.js";
 import validate from "../../middleware/validation.middleware.js";
-import * as v from "../../validation/auth.validation.js";
+import * as validation from "../../validation/auth.validation.js";
 
 const router = express.Router();
 
-router.post("/signup", v.signupValidation, validate, c.signup);
-router.post("/login", v.loginValidation, validate, c.login);
-router.get("/profile", auth("user"), c.getProfile);
-router.post("/forgot-password", v.forgotPasswordValidation, validate, c.forgotPassword);
-router.post("/verify-otp", v.verifyOtpValidation, validate, c.verifyOtp);
-router.post("/reset-password", v.resetPasswordValidation, validate, c.resetPassword);
-router.delete("/delete-profile", v.deleteByEmailValidation, validate, auth, c.deleteProfileController);
+router.post("/signup", validation.signupValidation, validate, controller.signup);
+router.post("/login", validation.loginValidation, validate, controller.login);
+router.get("/profile", auth("user"), controller.getProfile);
+router.post("/forgot-password", validation.forgotPasswordValidation, validate, controller.forgotPassword);
+router.post("/verify-otp", validation.verifyOtpValidation, validate, controller.verifyOtp);
+router.post("/reset-password", validation.resetPasswordValidation, validate, controller.resetPassword);
+router.delete("/delete-profile", validation.deleteByEmailValidation, validate, auth, controller.deleteProfileController);
 export default router;

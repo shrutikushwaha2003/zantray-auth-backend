@@ -1,15 +1,13 @@
-import * as service from "../../services/admin/auth.service.js";
+import * as authService from "../../services/admin/auth.service.js";
 import { successResponse, errorResponse } from "../../utils/response.utils.js";
 import Admin from "../../models/admin.model.js";
-import User from "../../models/user.model.js";
-import CustomError from "../../utils/CustomError.js";
 
-/* Signup */
+/* Admin signup */
 export const signup = async (req, res) => {
   try {
-    await service.signup(req.body);
+    await authService.signup(req.body);
     return successResponse(res, {
-      message: "Signup successful. OTP sent to email.",
+      message: "Admin signup successful. OTP sent to email",
     });
   } catch (err) {
     return errorResponse(res, err);
@@ -19,7 +17,11 @@ export const signup = async (req, res) => {
 /* Verify signup OTP */
 export const verifyOtp = async (req, res) => {
   try {
-    await service.verifyOtpCommon(req.body);
+    await authService.verifyOtpCommon({
+      ...req.body,
+      purpose: "SIGNUP",
+    });
+
     return successResponse(res, {
       message: "OTP verified successfully",
     });
@@ -28,10 +30,10 @@ export const verifyOtp = async (req, res) => {
   }
 };
 
-/* Login */
+/* Admin login */
 export const login = async (req, res) => {
   try {
-    const token = await service.login(req.body);
+    const token = await authService.login(req.body);
     return successResponse(res, {
       message: "Login successful",
       data: { token },
@@ -41,35 +43,10 @@ export const login = async (req, res) => {
   }
 };
 
-/* Get profile (user or admin) */
-export const getProfile = async (req, res) => {
-  try {
-    const { id, role } = req.user;
-    let profile = null;
-
-    if (role === "admin") {
-      profile = await Admin.findById(id).select("-password");
-    }
-
-    if (role === "user") {
-      profile = await User.findById(id).select("-password");
-    }
-
-    if (!profile) throw new CustomError("Profile not found", 404);
-
-    return successResponse(res, {
-      message: "Profile fetched",
-      data: profile,
-    });
-  } catch (err) {
-    return errorResponse(res, err);
-  }
-};
-
 /* Forgot password */
 export const forgotPassword = async (req, res) => {
   try {
-    await service.adminForgotPassword(req.body);
+    await authService.forgotPassword(req.body);
     return successResponse(res, {
       message: "OTP sent for password reset",
     });
@@ -81,9 +58,13 @@ export const forgotPassword = async (req, res) => {
 /* Verify forgot OTP */
 export const verifyForgotOtp = async (req, res) => {
   try {
-    const { resetToken } = await service.verifyAdminForgotOtp(req.body);
+    const resetToken = await authService.verifyOtpCommon({
+      ...req.body,
+      purpose: "FORGOT_PASSWORD",
+    });
+
     return successResponse(res, {
-      message: "OTP verified",
+      message: "OTP verified successfully",
       data: { resetToken },
     });
   } catch (err) {
@@ -94,7 +75,7 @@ export const verifyForgotOtp = async (req, res) => {
 /* Reset password */
 export const resetPassword = async (req, res) => {
   try {
-    await service.adminResetPassword(req.body);
+    await authService.resetPassword(req.body);
     return successResponse(res, {
       message: "Password reset successful",
     });
@@ -103,12 +84,12 @@ export const resetPassword = async (req, res) => {
   }
 };
 
-/* Delete profile */
-export const deleteProfile = async (req, res) => {
+/* Admin profile */
+export const getProfile = async (req, res) => {
   try {
-    await service.deleteAdminProfile(req.body);
+    const admin = await Admin.findById(req.user.id).select("-password");
     return successResponse(res, {
-      message: "Profile deleted successfully",
+      data: admin,
     });
   } catch (err) {
     return errorResponse(res, err);
