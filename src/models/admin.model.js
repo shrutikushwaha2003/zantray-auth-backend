@@ -2,35 +2,45 @@ import mongoose from "mongoose";
 
 const adminSchema = new mongoose.Schema(
   {
-    name: String,
+    name: { type: String, required: true },
+
     email: {
       type: String,
+      required: true,
       unique: true,
-      required: true,
     },
-    password: {
+
+    password: { type: String, required: true },
+
+    // 🔥 ADD THESE
+    forgotOtp: {
       type: String,
-      required: true,
     },
-    role: {
-      type: String,
-      default: "admin",
+
+    forgotOtpExpiry: {
+      type: Number,
     },
+
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+
     isActive: {
       type: Boolean,
       default: true,
     },
-    isDeleted:{
-        type:Boolean,
-        default: false,
+
+    isDeleted: {
+      type: Boolean,
+      default: false,
     },
-    lastLogin: Date,
-    
+
+    lastLogin: {
+      type: Date,
+    },
   },
-  {
-    timestamps: true,
-    collection: "admins",
-  }
+  { timestamps: true }
 );
 
 export default mongoose.model("Admin", adminSchema);
