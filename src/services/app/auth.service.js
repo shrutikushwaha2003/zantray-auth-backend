@@ -76,7 +76,7 @@ export const login = async ({ email, password }) => {
   user.lastLogin = new Date();
   await user.save();
 
-  return jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+  return jwt.sign({ id: user._id }, process.env.USER_JWT_SECRET, {
     expiresIn: "7d",
   });
 };

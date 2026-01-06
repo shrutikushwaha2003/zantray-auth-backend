@@ -80,7 +80,7 @@ export const login = async ({ email, password }) => {
 
   return jwt.sign(
     { id: admin._id, role: "admin" },
-    process.env.JWT_SECRET,
+    process.env.ADMIN_JWT_SECRET,
     { expiresIn: "7d" }
   );
 };

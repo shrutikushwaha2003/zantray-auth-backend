@@ -1,11 +1,11 @@
 import jwt from "jsonwebtoken";
 
 /**
- * Generic Auth Middleware
+ * Auth Middleware
  * Usage:
- *  auth()               → user OR admin (both allowed)
- *  auth("admin")        → only admin
- *  auth("user")         → only user
+ *  auth()         → user OR admin (based on token)
+ *  auth("admin")  → only admin
+ *  auth("user")   → only user
  */
 const auth = (requiredRole = null) => {
   return (req, res, next) => {
@@ -20,10 +20,17 @@ const auth = (requiredRole = null) => {
       }
 
       const token = authHeader.split(" ")[1];
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      // decoded = { id, role }
 
-      //  Role check (if required)
+      let decoded;
+
+      // verify token with correct secret
+      try {
+        decoded = jwt.verify(token, process.env.ADMIN_JWT_SECRET);
+      } catch {
+        decoded = jwt.verify(token, process.env.USER_JWT_SECRET);
+      }
+
+      // role check
       if (requiredRole && decoded.role !== requiredRole) {
         return res.status(403).json({
           success: false,
