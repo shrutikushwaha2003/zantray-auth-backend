@@ -1,8 +1,8 @@
-import Admin from "../../models/admin.model.js";
+import Admin from "../../../models/admin.model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import CustomError from "../../utils/CustomError.js";
-import { sendOtpEmail } from "../../utils/emails.js";
+import CustomError from "../../../utils/CustomError.js";
+import { sendOtpEmail } from "../../../utils/emails.js";
 
 /* ================= SIGNUP ================= */
 export const signup = async ({ name, email, password }) => {
@@ -37,6 +37,7 @@ export const verifyOtpCommon = async ({ email, otp, purpose }) => {
   ) {
     throw new CustomError("Invalid or expired OTP", 400);
   }
+
 
   // SIGNUP FLOW
   if (purpose === "SIGNUP") {
@@ -108,3 +109,15 @@ export const resetPassword = async ({ token, password }) => {
   admin.password = await bcrypt.hash(password, 10);
   await admin.save();
 };
+
+/* ================= GET PROFILE ================= */
+export const getAdminProfile = async (adminId) => {
+  const admin = await Admin.findById(adminId).select("-password");
+
+  if (!admin) {
+    throw new CustomError("Admin not found", 404);
+  }
+
+  return admin;
+};
+

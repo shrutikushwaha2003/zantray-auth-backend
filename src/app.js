@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 
 import authRoutes from "./routes/app/auth.route.js";
-import adminAuthRoutes from "./routes/admin/auth.route.js";
+import adminAuthRoutes from "./routes/admin/auth/auth.route.js";
 
 import errorHandler from "./middleware/error.middleware.js";
 import requestLogger from "./middleware/request-logger.middleware.js";

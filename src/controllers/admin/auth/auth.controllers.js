@@ -1,6 +1,6 @@
-import * as authService from "../../services/admin/auth.service.js";
-import { successResponse, errorResponse } from "../../utils/response.utils.js";
-import Admin from "../../models/admin.model.js";
+import * as authService from "../../../services/admin/auth/auth.service.js";
+import { successResponse, errorResponse } from "../../../utils/response.utils.js";
+import Admin from "../../../models/admin.model.js";
 
 /* Admin signup */
 export const signup = async (req, res) => {
@@ -60,7 +60,7 @@ export const verifyForgotOtp = async (req, res) => {
   try {
     const resetToken = await authService.verifyOtpCommon({
       ...req.body,
-      purpose: "FORGOT_PASSWORD",
+      purposecommunities: "FORGOT_PASSWORD",
     });
 
     return successResponse(res, {
@@ -85,9 +85,11 @@ export const resetPassword = async (req, res) => {
 };
 
 /* Admin profile */
+
 export const getProfile = async (req, res) => {
   try {
-    const admin = await Admin.findById(req.user.id).select("-password");
+    const admin = await authService.getAdminProfile(req.user.id);
+
     return successResponse(res, {
       data: admin,
     });
@@ -95,3 +97,5 @@ export const getProfile = async (req, res) => {
     return errorResponse(res, err);
   }
 };
+
+
