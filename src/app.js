@@ -4,6 +4,9 @@ import connectDB from "./config/db.js";
 
 import authRoutes from "./routes/app/auth.route.js";
 import adminAuthRoutes from "./routes/admin/auth/auth.route.js";
+import adminHBannerRoute from "./routes/admin/home/banner.Route.js";
+import adminHhowItWorksRoute from "./routes/admin/home/howItWorks.Route.js";
+
 
 import errorHandler from "./middleware/error.middleware.js";
 import requestLogger from "./middleware/request-logger.middleware.js";
@@ -22,6 +25,11 @@ app.use("/api/auth", authRoutes);
 
 /* ===== ADMIN ROUTES ===== */
 app.use("/api/admin/auth", adminAuthRoutes);
+
+app.use("/api/admin/home/Banner",adminHBannerRoute);
+
+app.use("/api/admin/home/how-it-works",adminHhowItWorksRoute);
+
 
 /* ===== ERROR HANDLER (LAST) ===== */
 app.use(errorHandler);

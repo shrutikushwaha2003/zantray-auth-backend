@@ -1,6 +1,6 @@
 import * as authService from "../../../services/admin/auth/auth.service.js";
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
-import Admin from "../../../models/admin.model.js";
+import Admin from "../../../models/admin/admin.model.js";
 
 /* Admin signup */
 export const signup = async (req, res) => {

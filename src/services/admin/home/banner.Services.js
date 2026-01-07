@@ -1,10 +1,14 @@
-import Banner from "../../../models/homePage.model.js";
+import Banner from "../../../models/home/banner.model.js";
 import CustomError from "../../../utils/CustomError.js";
 
 
-export const createBanner= async(data)=>{
-    return await Banner.create(data);
-}
+export const createBanner = async (data, adminId) => {
+  return await Banner.create({
+    ...data,
+    createdBy: adminId,   
+  });
+};
+
 
 export const getAllBanner=async()=>{
     return await Banner.find().sort({order:1,createdAt:-1});

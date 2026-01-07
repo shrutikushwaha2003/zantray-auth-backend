@@ -1,6 +1,6 @@
 import * as service from "../../services/app/auth.service.js";
 import { successResponse, errorResponse } from "../../utils/response.utils.js";
-import User from "../../models/user.model.js";
+import User from "../../models/user/user.model.js";
 import CustomError from "../../utils/CustomError.js";
 
 export const signup = async (req, res) => {

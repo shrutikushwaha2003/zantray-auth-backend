@@ -1,0 +1,50 @@
+import mongoose from "mongoose";
+
+const howItWorksSectionSchema = new mongoose.Schema(
+  {
+    smallTitle: {
+      type: String,
+      required: true, // Simple Process
+    },
+
+    mainTitle: {
+      type: String,
+      required: true, // How It Works
+    },
+
+    description: {
+      type: String,
+      required: true,
+    },
+
+    isActive: {
+      type: Boolean,
+      default: true,
+    },
+
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Admin",
+      required: true,
+    },
+
+    updatedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Admin",
+    },
+
+    createdOn: {
+      type: Date,
+      default: Date.now,
+    },
+
+    updatedOn: {
+      type: Date,
+    },
+  }
+);
+
+export default mongoose.model(
+  "HowItWorksSection",
+  howItWorksSectionSchema
+);
