@@ -13,14 +13,16 @@ export const saveSection = async (req, res) => {
 };
 
 // STEPS
-export const createStep = async (req, res) => {
-  const step = await howItWorksService.createStep(
-    req.body,
-    req.user.id 
+
+export const createStep= async (req, res) => {
+  const steps = await howItWorksService.createSteps(
+    req.body,        
+    req.user.id    
   );
 
-  res.json({ success: true, data: step });
+  res.json({ success: true, data: steps });
 };
+
 
 export const getStepsAdmin = async (req, res) => {
   const steps = await howItWorksService.getSteps();

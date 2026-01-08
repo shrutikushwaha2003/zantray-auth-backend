@@ -3,20 +3,11 @@ import HowItWorksStep from "../../../models/home/howItWorksStep.model.js";
 
 /* SECTION */
 export const upsertSection = async (data, adminId) => {
-  const section = await HowItWorksSection.findOneAndUpdate(
+  return await HowItWorksSection.findOneAndUpdate(
     {},
-    {
-      ...data,
-      updatedBy: adminId,
-      updatedOn: new Date(),
-    },
-    {
-      new: true,
-      upsert: true, // create if not exists
-    }
+    { ...data, updatedBy: adminId, updatedOn: new Date() },
+    { new: true, upsert: true }
   );
-
-  return section;
 };
 
 export const getSection = async () => {
@@ -24,11 +15,13 @@ export const getSection = async () => {
 };
 
 /* STEPS */
-export const createStep = async (data, adminId) => {
-  return await HowItWorksStep.create({
-    ...data,
-    createdBy: adminId,
-  });
+export const createSteps = async (items, adminId) => {
+  const payload = items.map(item => ({
+    ...item,
+    createdBy: adminId
+  }));
+
+  return await HowItWorksStep.insertMany(payload);
 };
 
 export const getSteps = async () => {
@@ -38,11 +31,7 @@ export const getSteps = async () => {
 export const updateStep = async (id, data, adminId) => {
   return await HowItWorksStep.findByIdAndUpdate(
     id,
-    {
-      ...data,
-      updatedBy: adminId,
-      updatedOn: new Date(),
-    },
+    { ...data, updatedBy: adminId, updatedOn: new Date() },
     { new: true }
   );
 };

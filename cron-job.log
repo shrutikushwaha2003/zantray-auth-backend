@@ -102,3 +102,65 @@
   "statusCode": 200,
   "responseTime": "3ms"
 }
+2026-01-08 13:06:48.888 [info]: Server running on port 5000
+2026-01-08 13:40:08.834 [info]: Server running on port 5000
+2026-01-08 13:40:17.263 [info]: Server running on port 5000
+2026-01-08 13:40:18.645 [info]: Server running on port 5000
+2026-01-08 13:40:56.713 [info]: Server running on port 5000
+2026-01-08 13:41:09.796 [info]: Server running on port 5000
+2026-01-08 13:41:11.544 [info]: Server running on port 5000
+2026-01-08 13:41:25.978 [info]: Server running on port 5000
+2026-01-08 13:41:27.036 [info]: Server running on port 5000
+2026-01-08 13:41:29.407 [info]: Server running on port 5000
+2026-01-08 13:41:31.973 [info]: Server running on port 5000
+2026-01-08 13:41:33.801 [info]: Server running on port 5000
+2026-01-08 13:41:46.857 [info]: Server running on port 5000
+2026-01-08 13:41:48.171 [info]: Server running on port 5000
+2026-01-08 13:41:52.581 [info]: Server running on port 5000
+2026-01-08 13:42:01.354 [info]: Server running on port 5000
+2026-01-08 13:42:09.538 [info]: Server running on port 5000
+2026-01-08 13:45:25.339 [info]: Server running on port 5000
+2026-01-08 13:45:35.410 [info]: Server running on port 5000
+2026-01-08 13:45:50.415 [info]: Server running on port 5000
+2026-01-08 13:48:52.439 [info]: Server running on port 5000
+2026-01-08 13:49:10.658 [info]: Server running on port 5000
+2026-01-08 13:49:23.284 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/how-it-works/steps",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-08 13:49:36.310 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/home/how-it-works/steps/695e5c13fee814f58bd0e30a",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-08 13:49:46.253 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/how-it-works/steps",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-08 13:50:07.660 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/how-it-works/steps",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-08 13:50:19.854 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/how-it-works/steps",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
