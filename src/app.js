@@ -3,10 +3,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 
 import authRoutes from "./routes/app/auth.route.js";
-import adminAuthRoutes from "./routes/admin/auth/auth.route.js";
-import adminHBannerRoute from "./routes/admin/home/banner.Route.js";
-import adminHhowItWorksRoute from "./routes/admin/home/howItWorks.Route.js";
-
+import adminRoutes from "./routes/admin/index.js";
 
 import errorHandler from "./middleware/error.middleware.js";
 import requestLogger from "./middleware/request-logger.middleware.js";
@@ -20,18 +17,13 @@ app.set("trust proxy", true);
 app.use(express.json());
 app.use(requestLogger);
 
-/* ===== USER ROUTES ===== */
+/* USER ROUTES */
 app.use("/api/auth", authRoutes);
 
-/* ===== ADMIN ROUTES ===== */
-app.use("/api/admin/auth", adminAuthRoutes);
+/* ADMIN ROUTES */
+app.use("/api/admin", adminRoutes);
 
-app.use("/api/admin/home/Banner",adminHBannerRoute);
-
-app.use("/api/admin/home/how-it-works",adminHhowItWorksRoute);
-
-
-/* ===== ERROR HANDLER (LAST) ===== */
+/* ERROR HANDLER */
 app.use(errorHandler);
 
 export default app;

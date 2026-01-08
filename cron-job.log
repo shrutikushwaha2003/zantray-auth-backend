@@ -1,0 +1,104 @@
+2026-01-08 12:20:48.519 [info]: Server running on port 5000
+2026-01-08 12:22:45.276 [info]: Server running on port 5000
+2026-01-08 12:32:14.629 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/how-it-works/steps",
+  "statusCode": 200,
+  "responseTime": "18ms"
+}
+2026-01-08 12:36:14.951 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/features/section",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-08 12:36:24.781 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/login",
+  "statusCode": 200,
+  "responseTime": "111ms"
+}
+2026-01-08 12:36:46.716 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/features/section",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-08 12:41:03.656 [info]: Server running on port 5000
+2026-01-08 12:41:13.685 [info]: Server running on port 5000
+2026-01-08 12:41:19.892 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/features/items",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-08 12:43:42.815 [info]: Server running on port 5000
+2026-01-08 12:43:45.905 [info]: Server running on port 5000
+2026-01-08 12:43:48.203 [info]: Server running on port 5000
+2026-01-08 12:44:27.933 [info]: Server running on port 5000
+2026-01-08 12:46:47.595 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/features/items",
+  "statusCode": 200,
+  "responseTime": "23ms"
+}
+2026-01-08 12:47:55.976 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/home/features/items/695f5897a8f9e38528002c90",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}
+2026-01-08 12:48:31.776 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/features/items",
+  "statusCode": 200,
+  "responseTime": "9ms"
+}
+2026-01-08 12:51:51.360 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/features/items/695f59dfa0249fe237604159",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-08 12:52:02.369 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/features/items/695f59dfa0249fe237604159",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-08 12:52:22.173 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/features/items/695f59dfa0249fe237604159",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-08 12:52:32.189 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/features/items",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}

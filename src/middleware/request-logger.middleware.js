@@ -1,3 +1,5 @@
+import logger from "../utils/logger.js";
+
 const requestLogger = (req, res, next) => {
   const start = Date.now();
 
@@ -9,12 +11,12 @@ const requestLogger = (req, res, next) => {
       req.socket.remoteAddress ||
       req.ip;
 
-    console.log({
+    logger.info("HTTP Request", {
       ip,
       method: req.method,
       url: req.originalUrl,
-      status: res.statusCode,
-      timeMs,
+      statusCode: res.statusCode,
+      responseTime: `${timeMs}ms`,
     });
   });
 
