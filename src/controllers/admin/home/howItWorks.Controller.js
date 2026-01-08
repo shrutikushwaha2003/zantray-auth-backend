@@ -1,61 +1,91 @@
-import * as howItWorksService from "../../../services/admin/home/howItWorks.Services.js";
+import * as service from "../../../services/admin/home/howItWorks.Services.js";
+import { successResponse, errorResponse } from "../../../utils/response.utils.js";
 
 /* ===== ADMIN ===== */
 
 // SECTION
 export const saveSection = async (req, res) => {
-  const section = await howItWorksService.upsertSection(
-    req.body,
-    req.user._id
-  );
+  try {
+    const section = await service.upsertSection(req.body, req.user._id);
 
-  res.json({ success: true, data: section });
+    return successResponse(res, {
+      message: "Section saved successfully",
+      data: section
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
 
-// STEPS
-
+// BULK STEPS CREATE
 export const createStep= async (req, res) => {
-  const steps = await howItWorksService.createSteps(
-    req.body,        
-    req.user.id    
-  );
+  try {
+    const steps = await service.createStepsBulk(req.body, req.user._id);
 
-  res.json({ success: true, data: steps });
+    return successResponse(res, {
+      message: "Steps created successfully",
+      statusCode: 201,
+      data: steps
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
-
 
 export const getStepsAdmin = async (req, res) => {
-  const steps = await howItWorksService.getSteps();
-  res.json({ success: true, data: steps });
+  try {
+    const steps = await service.getSteps();
+
+    return successResponse(res, {
+      data: steps
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
 
 export const updateStep = async (req, res) => {
-  const step = await howItWorksService.updateStep(
-    req.params.id,
-    req.body,
-    req.user._id
-  );
+  try {
+    const step = await service.updateStep(req.params.id, req.body, req.user._id);
 
-  res.json({ success: true, data: step });
+    return successResponse(res, {
+      message: "Step updated successfully",
+      data: step
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
 
 export const deleteStep = async (req, res) => {
-  await howItWorksService.deleteStep(req.params.id);
-  res.json({ success: true, message: "Step deleted successfully" });
+  try {
+    await service.deleteStep(req.params.id);
+
+    return successResponse(res, {
+      message: "Step deleted successfully"
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
 
 /* ===== PUBLIC ===== */
 
 export const getHowItWorks = async (req, res) => {
-  const section = await howItWorksService.getSection();
-  const steps = await howItWorksService.getSteps();
+  try {
+    const section = await service.getSection();
+    const steps = await service.getSteps();
 
-  res.json({
-    success: true,
-    data: {
-      section,
-      steps,
-    },
-  });
+    return successResponse(res, {
+      data: { section, steps }
+    });
+
+  } catch (err) {
+    return errorResponse(res, err);
+  }
 };
-
