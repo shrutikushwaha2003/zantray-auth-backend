@@ -224,3 +224,186 @@
 2026-01-08 18:43:37.205 [info]: Server running on port 5000
 2026-01-08 18:43:44.603 [info]: Server running on port 5000
 2026-01-08 18:44:00.633 [info]: Server running on port 5000
+2026-01-09 10:48:53.591 [info]: Server running on port 5000
+2026-01-09 10:49:21.516 [info]: Server running on port 5000
+2026-01-09 10:49:50.759 [info]: Server running on port 5000
+2026-01-09 10:52:37.350 [info]: Server running on port 5000
+2026-01-09 10:53:15.903 [info]: Server running on port 5000
+2026-01-09 10:53:25.682 [info]: Server running on port 5000
+2026-01-09 10:53:28.786 [info]: Server running on port 5000
+2026-01-09 10:53:43.910 [info]: Server running on port 5000
+2026-01-09 10:53:45.684 [info]: Server running on port 5000
+2026-01-09 10:53:47.240 [info]: Server running on port 5000
+2026-01-09 10:53:49.758 [info]: Server running on port 5000
+2026-01-09 10:53:52.210 [info]: Server running on port 5000
+2026-01-09 10:53:53.250 [info]: Server running on port 5000
+2026-01-09 10:54:10.362 [info]: Server running on port 5000
+2026-01-09 11:22:23.218 [info]: Server running on port 5000
+2026-01-09 11:23:20.172 [info]: Server running on port 5000
+2026-01-09 11:24:54.850 [info]: Server running on port 5000
+2026-01-09 11:31:37.001 [info]: Server running on port 5000
+2026-01-09 11:40:28.484 [info]: Server running on port 5000
+2026-01-09 11:40:35.041 [info]: Server running on port 5000
+2026-01-09 11:40:41.589 [info]: Server running on port 5000
+2026-01-09 11:41:37.505 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/transform/create",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-09 11:42:03.356 [info]: Server running on port 5000
+2026-01-09 11:42:06.238 [info]: Server running on port 5000
+2026-01-09 11:42:07.421 [info]: Server running on port 5000
+2026-01-09 11:42:17.040 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/transform/create",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-09 11:43:35.871 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/transform/get",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-09 11:45:16.028 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/transform/69609c412445e6550028df67",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-09 11:46:26.424 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/transform/69609c412445e6550028df67",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-09 11:46:32.709 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/transform/get",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-09 11:46:52.739 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/home/transform/69609c412445e6550028df67",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-09 11:47:10.708 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/transform/create",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-09 11:55:45.078 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/banner/banners",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-09 11:55:57.162 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/banner/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-09 12:06:31.422 [info]: Server running on port 5000
+2026-01-09 12:06:44.573 [info]: Server running on port 5000
+2026-01-09 12:06:51.286 [info]: Server running on port 5000
+2026-01-09 12:07:20.659 [info]: Server running on port 5000
+2026-01-09 12:10:12.824 [info]: Server running on port 5000
+2026-01-09 12:11:06.283 [info]: Server running on port 5000
+2026-01-09 12:12:29.703 [info]: Server running on port 5000
+2026-01-09 12:12:32.663 [info]: Server running on port 5000
+2026-01-09 12:12:39.240 [info]: Server running on port 5000
+2026-01-09 12:12:54.529 [info]: Server running on port 5000
+2026-01-09 12:18:10.577 [info]: Server running on port 5000
+2026-01-09 12:19:46.454 [info]: Server running on port 5000
+2026-01-09 12:20:00.251 [info]: Server running on port 5000
+2026-01-09 12:20:03.917 [info]: Server running on port 5000
+2026-01-09 12:26:58.136 [info]: Server running on port 5000
+2026-01-09 12:26:59.345 [info]: Server running on port 5000
+2026-01-09 12:27:13.824 [info]: Server running on port 5000
+2026-01-09 12:41:03.959 [info]: Server running on port 5000
+2026-01-09 12:44:52.522 [info]: Server running on port 5000
+2026-01-09 12:45:25.210 [info]: Server running on port 5000
+2026-01-09 12:56:32.661 [info]: Server running on port 5000
+2026-01-09 12:56:52.300 [info]: Server running on port 5000
+2026-01-09 13:00:17.489 [info]: Server running on port 5000
+2026-01-09 13:01:08.797 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/socialLink",
+  "statusCode": 401,
+  "responseTime": "3ms"
+}
+2026-01-09 13:01:23.103 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/socialLink",
+  "statusCode": 200,
+  "responseTime": "29ms"
+}
+2026-01-09 13:02:10.422 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/socialLink",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-09 13:05:37.946 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/home/socialLink/6960aecbedc024e559645c37",
+  "statusCode": 200,
+  "responseTime": "13ms"
+}
+2026-01-09 13:06:25.632 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/home/socialLink/6960aecbedc024e559645c37",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-09 13:06:43.789 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/home/socialLink",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-09 13:06:53.098 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/home/socialLink",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
