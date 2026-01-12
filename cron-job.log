@@ -407,3 +407,151 @@
   "statusCode": 200,
   "responseTime": "3ms"
 }
+2026-01-12 16:05:50.859 [info]: Server running on port 5000
+2026-01-12 16:06:07.238 [info]: Server running on port 5000
+2026-01-12 16:55:22.012 [info]: Server running on port 5000
+2026-01-12 16:55:30.652 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricingfaq/",
+  "statusCode": 404,
+  "responseTime": "6ms"
+}
+2026-01-12 16:56:07.469 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 400,
+  "responseTime": "6ms"
+}
+2026-01-12 16:56:59.500 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 401,
+  "responseTime": "0ms"
+}
+2026-01-12 16:57:18.769 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/login",
+  "statusCode": 200,
+  "responseTime": "119ms"
+}
+2026-01-12 16:57:39.641 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 400,
+  "responseTime": "2ms"
+}
+2026-01-12 16:58:52.251 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 400,
+  "responseTime": "2ms"
+}
+2026-01-12 17:29:19.962 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 400,
+  "responseTime": "2ms"
+}
+2026-01-12 17:32:52.701 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 400,
+  "responseTime": "1ms"
+}
+2026-01-12 17:55:57.041 [info]: Server running on port 5000
+2026-01-12 17:56:02.257 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-12 17:56:17.416 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-12 17:57:40.475 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/pricing/",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-12 17:57:48.526 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-12 18:03:41.889 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/pricing/6964e8692b2fa77cb7b6c3b1",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}
+2026-01-12 18:03:51.451 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-12 18:04:32.920 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/pricing/6964e8692b2fa77cb7b6c3b1",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-12 18:04:38.574 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-12 18:04:43.343 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-12 18:04:48.206 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/pricing/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}

@@ -3,7 +3,7 @@ import { successResponse, errorResponse } from "../../../utils/response.utils.js
 
 export const createHero = async (req, res) => {
   try {
-    const result = await heroService.createHero(req.body, req.user._id);
+    const result = await heroService.createHero(req.body, req.user.id);
     successResponse(res, { message: "Hero created successfully", data: result });
   } catch (err) {
     errorResponse(res, err);

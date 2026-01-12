@@ -19,7 +19,7 @@ export const saveSection = async (req, res) => {
 };
 
 // BULK STEPS CREATE
-export const createStep= async (req, res) => {
+export const createStep = async (req, res) => {
   try {
     const steps = await service.createStepsBulk(req.body, req.user._id);
 
