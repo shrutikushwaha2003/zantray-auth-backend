@@ -14,6 +14,10 @@ import socialLink from "../../routes/admin/home/socialLink.Route.js" ;
 // ======PRICING MODULES====== //
 import pricingFaq from "../../routes/admin/pricing/faq.Routes.js" ;
 
+// ======ABOUT MODULES ========//
+import aboutRoutes from "../../routes/admin/about/hero.Route.js";
+
+
 
 
 // ===== AUTH ROUTES ===== //
@@ -29,6 +33,12 @@ adminRoutes.use("/home/socialLink", socialLink);
 
 // ===== PRICING ROUTES ===== //
 
-adminRoutes.use("/pricing", pricingFaq);
+adminRoutes.use("/pricing/faq", pricingFaq);
+
+
+//===== About =====//
+
+adminRoutes.use("/about/hero", aboutRoutes);
+
 
 export default adminRoutes;
