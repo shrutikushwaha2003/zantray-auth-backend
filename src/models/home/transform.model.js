@@ -14,6 +14,8 @@ const heroSchema = new mongoose.Schema(
     order: { type: Number, default: 1 },
     createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
     updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+    createdOn: { type: Date, default: Date.now },
+    updatedOn: { type: Date },
     isActive: { type: Boolean, default: true },
   },
   { timestamps: true }

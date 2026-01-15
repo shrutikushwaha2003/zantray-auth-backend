@@ -5,6 +5,11 @@ import auth from "../../../middleware/auth.middleware.js";
 import * as authValidation from "../../../validation/auth.validation.js";
 
 const router = express.Router();
+router.post("/loginj", (req, res, next) => {
+  console.log("LOGIN ROUTE HIT");
+  next();
+});
+
 
 router.post("/signup", authValidation.signupValidation, validate, authController.signup);
 router.post("/verify-signup-otp", authValidation.verifyOtpValidation, validate, authController.verifyOtp);

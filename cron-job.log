@@ -608,3 +608,478 @@
   "responseTime": "3ms"
 }
 2026-01-13 12:57:01.340 [info]: Server running on port 5000
+2026-01-13 15:50:28.442 [info]: Server running on port 5000
+2026-01-13 16:01:57.665 [info]: Server running on port 5000
+2026-01-13 16:02:33.127 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 400,
+  "responseTime": "8ms"
+}
+2026-01-13 16:04:46.628 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 500,
+  "responseTime": "120192ms"
+}
+2026-01-13 16:05:18.376 [info]: Server running on port 5000
+2026-01-13 16:05:24.032 [info]: Server running on port 5000
+2026-01-13 16:05:52.588 [info]: Server running on port 5000
+2026-01-13 16:05:56.119 [info]: Server running on port 5000
+2026-01-13 16:06:14.370 [info]: Server running on port 5000
+2026-01-13 16:06:26.179 [info]: Server running on port 5000
+2026-01-13 16:08:20.369 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 400,
+  "responseTime": "17ms"
+}
+2026-01-13 16:08:49.150 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 200,
+  "responseTime": "5084ms"
+}
+2026-01-13 16:13:23.521 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/verify-otp",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-13 16:13:53.840 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "83ms"
+}
+2026-01-13 16:31:13.873 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-13 16:31:23.256 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-13 16:35:55.475 [info]: Server running on port 5000
+2026-01-13 16:37:06.724 [info]: Server running on port 5000
+2026-01-13 16:45:41.098 [info]: Server running on port 5000
+2026-01-14 10:48:49.795 [info]: Server running on port 5000
+2026-01-14 11:19:31.730 [info]: Server running on port 5000
+2026-01-14 11:20:19.466 [info]: Server running on port 5000
+2026-01-14 11:20:40.442 [info]: Server running on port 5000
+2026-01-14 11:21:36.133 [info]: Server running on port 5000
+2026-01-14 11:32:13.326 [info]: Server running on port 5000
+2026-01-14 11:33:35.521 [info]: Server running on port 5000
+2026-01-14 11:34:20.257 [info]: Server running on port 5000
+2026-01-14 11:34:45.203 [info]: Server running on port 5000
+2026-01-14 11:40:24.334 [info]: Server running on port 5000
+2026-01-14 11:40:53.667 [info]: Server running on port 5000
+2026-01-14 11:41:35.473 [info]: Server running on port 5000
+2026-01-14 11:44:07.080 [info]: Server running on port 5000
+2026-01-14 11:44:26.903 [info]: Server running on port 5000
+2026-01-14 11:44:49.416 [info]: Server running on port 5000
+2026-01-14 11:56:18.121 [info]: Server running on port 5000
+2026-01-14 12:03:33.319 [info]: Server running on port 5000
+2026-01-14 12:03:49.580 [info]: Server running on port 5000
+2026-01-14 12:10:01.330 [info]: Server running on port 5000
+2026-01-14 12:59:49.812 [info]: Server running on port 5000
+2026-01-14 12:59:54.917 [info]: Server running on port 5000
+2026-01-14 13:00:31.852 [info]: Server running on port 5000
+2026-01-14 13:33:48.447 [info]: Server running on port 5000
+2026-01-14 13:37:18.862 [info]: Server running on port 5000
+2026-01-14 13:38:10.311 [info]: Server running on port 5000
+2026-01-14 13:40:15.810 [info]: Server running on port 5000
+2026-01-14 13:40:18.704 [info]: Server running on port 5000
+2026-01-14 13:40:57.416 [info]: Server running on port 5000
+2026-01-14 13:56:07.169 [info]: Server running on port 5000
+2026-01-14 13:56:31.805 [info]: Server running on port 5000
+2026-01-14 13:57:44.095 [info]: Server running on port 5000
+2026-01-14 13:57:47.900 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/login",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-14 13:58:46.383 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-14 15:11:58.662 [info]: Server running on port 5000
+2026-01-14 15:12:06.694 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-14 15:15:09.246 [info]: Server running on port 5000
+2026-01-14 15:45:13.229 [info]: Server running on port 5000
+2026-01-14 15:45:22.633 [info]: Server running on port 5000
+2026-01-14 15:45:24.589 [info]: Server running on port 5000
+2026-01-14 15:49:23.475 [info]: Server running on port 5000
+2026-01-14 16:20:00.561 [info]: Server running on port 5000
+2026-01-14 16:20:01.814 [info]: Server running on port 5000
+2026-01-14 16:20:11.353 [info]: Server running on port 5000
+2026-01-14 16:20:15.245 [info]: Server running on port 5000
+2026-01-14 16:21:24.892 [info]: Server running on port 5000
+2026-01-14 17:33:50.213 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup/",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-14 17:37:38.429 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 404,
+  "responseTime": "0ms"
+}
+2026-01-14 17:38:36.242 [info]: Server running on port 5000
+2026-01-14 17:39:05.210 [info]: Server running on port 5000
+2026-01-14 17:43:13.554 [info]: Server running on port 5000
+2026-01-14 17:58:33.435 [info]: Server running on port 5000
+2026-01-14 17:58:38.151 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-14 17:59:06.595 [info]: Server running on port 5000
+2026-01-14 17:59:16.295 [info]: Server running on port 5000
+2026-01-14 17:59:41.335 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-14 18:05:23.630 [info]: Server running on port 5000
+2026-01-14 18:05:30.761 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/signup",
+  "statusCode": 200,
+  "responseTime": "4465ms"
+}
+2026-01-14 18:05:48.008 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 401,
+  "responseTime": "5ms"
+}
+2026-01-14 18:05:55.249 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/login",
+  "statusCode": 200,
+  "responseTime": "88ms"
+}
+2026-01-14 18:06:10.320 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 500,
+  "responseTime": "8ms"
+}
+2026-01-14 18:09:43.793 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-14 18:17:41.967 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-14 18:22:16.391 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 500,
+  "responseTime": "3ms"
+}
+2026-01-14 18:23:41.612 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 500,
+  "responseTime": "5ms"
+}
+2026-01-14 18:26:04.392 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-14 18:28:26.588 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/about/story/69678e8f83506a7c3bb58824",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-14 18:28:46.709 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/about/story/69678e8f83506a7c3bb58824",
+  "statusCode": 401,
+  "responseTime": "0ms"
+}
+2026-01-14 18:28:54.677 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/about/story/69678e8f83506a7c3bb58824",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-14 18:29:00.842 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-14 18:29:21.980 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-14 18:35:03.483 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/milestone/section",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-14 18:36:03.589 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/milestone/items",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-14 18:36:12.323 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/milestone/items",
+  "statusCode": 200,
+  "responseTime": "41ms"
+}
+2026-01-14 18:37:24.994 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/milestone/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-14 18:39:33.099 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/milestone/696794c483506a7c3bb58834",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-14 18:39:49.070 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/milestone/item/696794c483506a7c3bb58834",
+  "statusCode": 404,
+  "responseTime": "1ms"
+}
+2026-01-14 18:40:03.519 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/about/milestone/item/696794c483506a7c3bb58834",
+  "statusCode": 404,
+  "responseTime": "1ms"
+}
+2026-01-14 18:42:16.938 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/admin/about/milestone/item/696794c483506a7c3bb58831",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-14 18:43:02.239 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/about/milestone/item/696794c483506a7c3bb58831",
+  "statusCode": 401,
+  "responseTime": "0ms"
+}
+2026-01-14 18:43:14.515 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/admin/about/milestone/item/696794c483506a7c3bb58831",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-14 18:43:24.135 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/milestone/items",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-15 12:08:25.430 [info]: Server running on port 5000
+2026-01-15 12:08:36.773 [info]: Server running on port 5000
+2026-01-15 12:08:44.060 [info]: Server running on port 5000
+2026-01-15 13:26:50.602 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 13:26:50.635 [info]: Server running on port 5000
+2026-01-15 16:05:25.844 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/about/story/",
+  "statusCode": 200,
+  "responseTime": "20ms"
+}
+2026-01-15 16:29:06.041 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 16:29:06.071 [info]: Server running on port 5000
+2026-01-15 16:30:05.874 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 16:30:05.906 [info]: Server running on port 5000
+2026-01-15 16:30:43.830 [info]: Server running on port 5000
+2026-01-15 16:31:03.297 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 16:31:03.346 [info]: Server running on port 5000
+2026-01-15 16:31:06.845 [info]: Server running on port 5000
+2026-01-15 16:31:20.066 [info]: Server running on port 5000
+2026-01-15 16:31:22.205 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 16:31:22.235 [info]: Server running on port 5000
+2026-01-15 17:35:46.280 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:35:46.324 [info]: Server running on port 5000
+2026-01-15 17:35:47.507 [info]: S3 CONFIG
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:35:47.537 [info]: Server running on port 5000
+2026-01-15 17:40:47.529 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:40:47.565 [info]: Server running on port 5000
+2026-01-15 17:46:09.759 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:46:09.795 [info]: Server running on port 5000
+2026-01-15 17:48:00.944 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:48:00.974 [info]: Server running on port 5000
+2026-01-15 17:48:13.980 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:48:14.015 [info]: Server running on port 5000
+2026-01-15 17:49:42.414 [info]: Server running on port 5000
+2026-01-15 17:49:51.859 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:49:51.892 [info]: Server running on port 5000
+2026-01-15 17:49:53.212 [info]: Server running on port 5000
+2026-01-15 17:49:54.886 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-15 17:49:54.916 [info]: Server running on port 5000
+2026-01-15 17:50:02.094 [info]: Server running on port 5000

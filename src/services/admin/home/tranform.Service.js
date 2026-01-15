@@ -13,7 +13,7 @@ export const getHeroes = async () => {
   try {
     return await Hero.find({ isActive: true }).sort({ order: 1 });
   } catch (err) {
-    console.error("getHeroes error:", err);
+    console.errconnectedor("getHeroes error:", err);
     throw err;
   }
 };

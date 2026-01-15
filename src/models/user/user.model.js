@@ -13,7 +13,14 @@ const userSchema = new mongoose.Schema(
     forgotOtp: String,
     forgotOtpExpiry: Date,
     lastLogin: Date,
+
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+    updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+    createdOn: { type: Date, default: Date.now },
+    updatedOn: { type: Date }
   },
+  
+
   { timestamps: true ,
     collection: "users"
 

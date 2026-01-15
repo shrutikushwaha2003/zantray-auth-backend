@@ -3,10 +3,12 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 
 import authRoutes from "./routes/app/auth.route.js";
-import adminRoutes from "./routes/admin/index.js";
+import adminRoutes from "./routes/index.js";
 
 import errorHandler from "./middleware/error.middleware.js";
 import requestLogger from "./middleware/request-logger.middleware.js";
+
+
 
 dotenv.config();
 connectDB();
@@ -21,7 +23,7 @@ app.use(requestLogger);
 app.use("/api/auth", authRoutes);
 
 /* ADMIN ROUTES */
-app.use("/api/admin", adminRoutes);
+app.use("/api", adminRoutes);
 
 /* ERROR HANDLER */
 app.use(errorHandler);

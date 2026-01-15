@@ -12,7 +12,7 @@ const adminSchema = new mongoose.Schema(
 
     password: { type: String, required: true },
 
-    // 🔐 Login OTP (2FA)
+    //  Login OTP (2FA)
     otp: {
       type: String,
     },
@@ -20,7 +20,7 @@ const adminSchema = new mongoose.Schema(
       type: Number,
     },
 
-    // 🔁 Forgot password OTP
+    // Forgot password OTP
     forgotOtp: {
       type: String,
     },
@@ -32,6 +32,7 @@ const adminSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    // Forgot password OTP
 
     isActive: {
       type: Boolean,
@@ -46,6 +47,10 @@ const adminSchema = new mongoose.Schema(
     lastLogin: {
       type: Date,
     },
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+      updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+      createdOn: { type: Date, default: Date.now },
+      updatedOn: { type: Date }
   },
   { timestamps: true }
 );

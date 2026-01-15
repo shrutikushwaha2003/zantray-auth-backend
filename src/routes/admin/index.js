@@ -1,44 +1,18 @@
 import { Router } from "express";
 const adminRoutes = Router();
 
-// ===== AUTH ===== //
-import adminAuthRoutes from "../../routes/admin/auth/auth.route.js";
-
-// ===== HOME MODULES ===== //
-import bannerRoutes from "../../routes/admin/home/banner.Route.js";
-import howItWorksRoutes from "../../routes/admin/home/howItWorks.Route.js";
-import featuresRoutes from "../../routes/admin/home/features.Route.js";
-import heroRoutes from "../../routes/admin/home/transform.Route.js"; 
-import socialLink from "../../routes/admin/home/socialLink.Route.js" ;
-
-// ======PRICING MODULES====== //
-import pricingFaq from "../../routes/admin/pricing/faq.Routes.js" ;
-
-// ======ABOUT MODULES ========//
-import aboutRoutes from "../../routes/admin/about/hero.Route.js";
+import homeRoutes from "./home/index.js";
+import aboutRoutes from "./about/index.js";
+import authRoutes from "./auth/index.js";
+import pricingRoutes from "./pricing/index.js";
 
 
 
-
-// ===== AUTH ROUTES ===== //
-adminRoutes.use("/auth", adminAuthRoutes);
-
-
-// ===== HOME ROUTES ===== //
-adminRoutes.use("/home/banner", bannerRoutes);
-adminRoutes.use("/home/how-it-works", howItWorksRoutes);
-adminRoutes.use("/home/features", featuresRoutes);
-adminRoutes.use("/home/hero", heroRoutes);  
-adminRoutes.use("/home/socialLink", socialLink);  
-
-// ===== PRICING ROUTES ===== //
-
-adminRoutes.use("/pricing/faq", pricingFaq);
-
-
-//===== About =====//
-
-adminRoutes.use("/about/hero", aboutRoutes);
+adminRoutes.use("/home", homeRoutes);
+adminRoutes.use("/about",aboutRoutes);
+adminRoutes.use("/auth",authRoutes);
+adminRoutes.use("/pricing",pricingRoutes);
 
 
 export default adminRoutes;
+
