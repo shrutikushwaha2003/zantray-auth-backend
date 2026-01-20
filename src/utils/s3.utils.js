@@ -30,7 +30,7 @@ logger.info("S3 configuration loaded", {
  * @param {Object} file multer file
  * @returns file URL
  */
-export const uploadFileToS3 = async (file) => {
+const uploadFileToS3 = async (file) => {
   try {
     if (!file) {
       throw new Error("No file provided for upload");
@@ -61,3 +61,4 @@ export const uploadFileToS3 = async (file) => {
     throw new Error("Failed to upload file to S3");
   }
 };
+ export default uploadFileToS3;

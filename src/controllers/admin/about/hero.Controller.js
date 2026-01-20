@@ -1,19 +1,14 @@
 import * as heroService from "../../../services/admin/about/hero.service.js";
+import uploadToS3 from "../../../utils/s3.utils.js";
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
 
 export const createHero = async (req, res) => {
   try {
-    const data = await heroService.createHero(req.body, req.user.id);
-    return successResponse(res, { message: "Hero Created", data });
-  } catch (err) {
-    return errorResponse(res, err);
-  }
-};
+    let payload = { ...req.body };
+    if (req.file) payload.image = await uploadToS3(req.file, "about/hero");
 
-export const getHeroes = async (req, res) => {
-  try {
-    const data = await heroService.getAllHeroes();
-    return successResponse(res, { data });
+    const data = await heroService.createHero(payload, req.user.id);
+    return successResponse(res, { message: "Hero created", data });
   } catch (err) {
     return errorResponse(res, err);
   }
@@ -21,7 +16,7 @@ export const getHeroes = async (req, res) => {
 
 export const getHero = async (req, res) => {
   try {
-    const data = await heroService.getHeroById(req.params.id);
+    const data = await heroService.getHero();
     return successResponse(res, { data });
   } catch (err) {
     return errorResponse(res, err);
@@ -30,8 +25,11 @@ export const getHero = async (req, res) => {
 
 export const updateHero = async (req, res) => {
   try {
-    const data = await heroService.updateHero(req.params.id, req.body, req.user.id);
-    return successResponse(res, { message: "Hero Updated", data });
+    let payload = { ...req.body };
+    if (req.file) payload.image = await uploadToS3(req.file, "about/hero");
+
+    const data = await heroService.updateHero(payload, req.user.id);
+    return successResponse(res, { message: "Hero updated", data });
   } catch (err) {
     return errorResponse(res, err);
   }
@@ -39,8 +37,8 @@ export const updateHero = async (req, res) => {
 
 export const deleteHero = async (req, res) => {
   try {
-    await heroService.deleteHero(req.params.id);
-    return successResponse(res, { message: "Hero Deleted" });
+    await heroService.deleteHero(req.user.id);
+    return successResponse(res, { message: "Hero deleted" });
   } catch (err) {
     return errorResponse(res, err);
   }

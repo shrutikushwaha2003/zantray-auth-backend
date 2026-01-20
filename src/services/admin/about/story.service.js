@@ -1,68 +1,86 @@
-import AboutStory from "../../../models/about/story.model.js";
+import Story from "../../../models/about/story.model.js";
 import CustomError from "../../../utils/CustomError.js";
 
+/* CREATE STORY (only once) */
 export const createStory = async (data, adminId) => {
   try {
-    const story = await AboutStory.create({
+    const existing = await Story.findOne({ isActive: true });
+    if (existing) {
+      throw new CustomError("Story already exists. Please update instead.", 400);
+    }
+
+    const story = await Story.create({
       ...data,
       createdBy: adminId,
+      isActive: true
     });
 
     return story;
   } catch (err) {
-    console.error("createStory error:", err);
+    console.error("[StoryService] createStory error:", err);
     throw err;
   }
 };
 
-export const getStories = async () => {
+/* GET STORY */
+export const getStory = async () => {
   try {
-    return await AboutStory.find({ isActive: true });
-  } catch (err) {
-    console.error("getStories error:", err);
-    throw err;
-  }
-};
-
-export const getStoryById = async (id) => {
-  try {
-    const story = await AboutStory.findById(id);
-    if (!story) throw new CustomError("Story not found", 404);
+    const story = await Story.findOne({ isActive: true });
     return story;
   } catch (err) {
-    console.error("getStoryById error:", err);
+    console.error("[StoryService] getStory error:", err);
     throw err;
   }
 };
 
-export const updateStory = async (id, data, adminId) => {
+/* UPDATE STORY (preserve images) */
+export const updateStory = async (data, adminId) => {
   try {
-    const story = await AboutStory.findByIdAndUpdate(
-      id,
-      { ...data, updatedBy: adminId, updatedOn: new Date() },
+    const existing = await Story.findOne({ isActive: true });
+
+    if (!existing) {
+      throw new CustomError("Story not found.", 404);
+    }
+
+    // preserve images if not provided
+    const images = {
+      topLeft: data.images?.topLeft || existing.images?.topLeft,
+      topRight: data.images?.topRight || existing.images?.topRight,
+      bottom: data.images?.bottom || existing.images?.bottom,
+    };
+
+    const updated = await Story.findByIdAndUpdate(
+      existing._id,
+      {
+        ...data,
+        images,
+        updatedBy: adminId
+      },
       { new: true }
     );
 
-    if (!story) throw new CustomError("Story not found", 404);
-    return story;
+    return updated;
   } catch (err) {
-    console.error("updateStory error:", err);
+    console.error("[StoryService] updateStory error:", err);
     throw err;
   }
 };
 
-export const deleteStory = async (id) => {
+/* SOFT DELETE STORY */
+export const deleteStory = async () => {
   try {
-    const story = await AboutStory.findByIdAndUpdate(
-      id,
-      { isActive: false },
-      { new: true }
-    );
+    const existing = await Story.findOne({ isActive: true });
 
-    if (!story) throw new CustomError("Story not found", 404);
-    return true;
+    if (!existing) {
+      throw new CustomError("Story not found.", 404);
+    }
+
+    await Story.findByIdAndUpdate(existing._id, { isActive: false });
+
+    return { success: true };
   } catch (err) {
-    console.error("deleteStory error:", err);
+    console.error("[StoryService] deleteStory error:", err);
     throw err;
   }
+  
 };

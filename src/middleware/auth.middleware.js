@@ -1,12 +1,5 @@
 import jwt from "jsonwebtoken";
 
-/**
- * Auth Middleware
- * Usage:
- *  auth()         → user OR admin (based on token)
- *  auth("admin")  → only admin
- *  auth("user")   → only user
- */
 const auth = (requiredRole = null) => {
   return (req, res, next) => {
     try {
@@ -20,26 +13,30 @@ const auth = (requiredRole = null) => {
       }
 
       const token = authHeader.split(" ")[1];
-
       let decoded;
 
-      // verify token with correct secret
-      try {
+      if (requiredRole === "admin") {
         decoded = jwt.verify(token, process.env.ADMIN_JWT_SECRET);
-      } catch {
+      } else if (requiredRole === "user") {
         decoded = jwt.verify(token, process.env.USER_JWT_SECRET);
+      } else {
+        try {
+          decoded = jwt.verify(token, process.env.ADMIN_JWT_SECRET);
+        } catch {
+          decoded = jwt.verify(token, process.env.USER_JWT_SECRET);
+        }
       }
 
-      // role check
       if (requiredRole && decoded.role !== requiredRole) {
         return res.status(403).json({
           success: false,
-          message: "Access denied",
+          message: `Access denied for role ${decoded.role}`,
         });
       }
 
-      req.user = decoded; // { id, role }
+      req.user = decoded;
       next();
+      
     } catch (err) {
       return res.status(401).json({
         success: false,

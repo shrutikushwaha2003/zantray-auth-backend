@@ -3,70 +3,40 @@ import CustomError from "../../../utils/CustomError.js";
 
 /* CREATE */
 export const createHero = async (data, adminId) => {
-  try {
-    const hero = await AboutHero.create({
-      ...data,
-      createdBy: adminId
-    });
-    return hero;
-  } catch (err) {
-    console.error("createHero error:", err);
-    throw err;
-  }
+  const existing = await AboutHero.findOne({ isActive: true });
+  if (existing) throw new CustomError("Hero already exists", 400);
+
+  return await AboutHero.create({ ...data, createdBy: adminId });
 };
 
-/* READ ALL (if needed) */
-export const getAllHeroes = async () => {
-  try {
-    return await AboutHero.find().sort({ createdAt: -1 });
-  } catch (err) {
-    console.error("getAllHeroes error:", err);
-    throw err;
-  }
-};
-
-/* READ ONE */
-export const getHeroById = async (id) => {
-  try {
-    const hero = await AboutHero.findById(id);
-    if (!hero) throw new CustomError("Hero section not found", 404);
-    return hero;
-  } catch (err) {
-    console.error("getHeroById error:", err);
-    throw err;
-  }
+/* GET */
+export const getHero = async () => {
+  return await AboutHero.findOne({ isActive: true }) || null;
 };
 
 /* UPDATE */
-export const updateHero = async (id, data, adminId) => {
-  try {
-    const hero = await AboutHero.findByIdAndUpdate(
-      id,
-      {
-        ...data,
-        updatedBy: adminId,
-        updatedOn: new Date()
-      },
-      { new: true }
-    );
+export const updateHero = async (data, adminId) => {
+  const existing = await AboutHero.findOne({ isActive: true });
+  if (!existing) throw new CustomError("Hero not found", 404);
 
-    if (!hero) throw new CustomError("Hero section not found", 404);
+  data.image = data.image || existing.image;
 
-    return hero;
-  } catch (err) {
-    console.error("updateHero error:", err);
-    throw err;
-  }
+  return await AboutHero.findByIdAndUpdate(
+    existing._id,
+    { ...data, updatedBy: adminId },
+    { new: true }
+  );
 };
 
 /* DELETE */
-export const deleteHero = async (id) => {
-  try {
-    const hero = await AboutHero.findByIdAndDelete(id);
-    if (!hero) throw new CustomError("Hero section not found", 404);
-    return true;
-  } catch (err) {
-    console.error("deleteHero error:", err);
-    throw err;
-  }
+export const deleteHero = async (adminId) => {
+  const existing = await AboutHero.findOne({ isActive: true });
+  if (!existing) throw new CustomError("Hero not found", 404);
+
+  await AboutHero.findByIdAndUpdate(existing._id, {
+    isActive: false,
+    updatedBy: adminId
+  });
+
+  return { success: true };
 };
