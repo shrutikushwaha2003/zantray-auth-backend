@@ -6740,3 +6740,91 @@
   "statusCode": 200,
   "responseTime": "12ms"
 }
+2026-01-21 18:09:41.947 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:09:41.986 [info]: Server running on port 5000
+2026-01-21 18:09:47.025 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/app/pricing/faq",
+  "statusCode": 404,
+  "responseTime": "4ms"
+}
+2026-01-21 18:09:53.818 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/app/pricing/faq/",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-21 18:11:37.715 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:11:37.751 [info]: Server running on port 5000
+2026-01-21 18:11:51.575 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/app/pricing/faq/",
+  "statusCode": 404,
+  "responseTime": "4ms"
+}
+2026-01-21 18:14:01.041 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:14:01.075 [info]: Server running on port 5000
+2026-01-21 18:14:15.425 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:14:15.464 [info]: Server running on port 5000
+2026-01-21 18:14:17.706 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:14:17.751 [info]: Server running on port 5000
+2026-01-21 18:14:45.855 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:14:45.889 [info]: Server running on port 5000
+2026-01-21 18:17:50.436 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:17:50.471 [info]: Server running on port 5000
+2026-01-21 18:18:06.306 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/app/pricing/faq/",
+  "statusCode": 200,
+  "responseTime": "18ms"
+}
+2026-01-21 18:20:26.155 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-21 18:20:26.190 [info]: Server running on port 5000
+2026-01-21 18:20:31.607 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/app/pricing/faq/",
+  "statusCode": 200,
+  "responseTime": "20ms"
+}
