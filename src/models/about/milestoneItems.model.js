@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const milestoneItemSchema = new mongoose.Schema({
+ 
   year: { type: Number, required: true },
   title: { type: String, required: true },
   description: { type: String },

@@ -21,7 +21,7 @@ export const saveSection = async (req, res) => {
 // BULK STEPS CREATE
 export const createStep = async (req, res) => {
   try {
-    const steps = await service.createStepsBulk(req.body, req.user._id);
+    const steps = await service.createSteps(req.body, req.user._id);
 
     return successResponse(res, {
       message: "Steps created successfully",
