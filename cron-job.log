@@ -7236,3 +7236,379 @@
   "statusCode": 200,
   "responseTime": "8ms"
 }
+2026-01-27 13:58:53.132 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:58:53.167 [info]: Server running on port 5000
+2026-01-27 13:59:20.024 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:59:20.057 [info]: Server running on port 5000
+2026-01-27 13:59:21.723 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:59:21.759 [info]: Server running on port 5000
+2026-01-27 13:59:30.712 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:59:30.746 [info]: Server running on port 5000
+2026-01-27 13:59:34.791 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:59:34.823 [info]: Server running on port 5000
+2026-01-27 13:59:54.826 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:59:54.862 [info]: Server running on port 5000
+2026-01-27 14:00:02.377 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:00:02.410 [info]: Server running on port 5000
+2026-01-27 14:00:05.136 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:00:05.175 [info]: Server running on port 5000
+2026-01-27 14:00:12.145 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/feed/",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-27 14:01:08.614 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/feed/",
+  "statusCode": 200,
+  "responseTime": "18ms"
+}
+2026-01-27 14:02:00.439 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/feed/69787794923c4b043ca82a48",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 14:02:20.790 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/feed/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 14:02:51.761 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/feed/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-27 14:03:09.205 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/feed/69787814923c4b043ca82a4d",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-27 14:46:34.066 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:46:34.117 [info]: Server running on port 5000
+2026-01-27 14:46:37.120 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:46:37.151 [info]: Server running on port 5000
+2026-01-27 14:47:31.329 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:47:31.375 [info]: Server running on port 5000
+2026-01-27 14:47:48.714 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:47:48.746 [info]: Server running on port 5000
+2026-01-27 14:48:41.859 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:48:41.890 [info]: Server running on port 5000
+2026-01-27 14:48:46.053 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:48:46.092 [info]: Server running on port 5000
+2026-01-27 14:48:55.441 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:48:55.473 [info]: Server running on port 5000
+2026-01-27 14:49:08.390 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:49:08.439 [info]: Server running on port 5000
+2026-01-27 14:49:09.805 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:49:09.836 [info]: Server running on port 5000
+2026-01-27 14:49:14.876 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:49:14.906 [info]: Server running on port 5000
+2026-01-27 14:50:47.674 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:50:47.716 [info]: Server running on port 5000
+2026-01-27 14:50:58.772 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:50:58.805 [info]: Server running on port 5000
+2026-01-27 14:51:07.673 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:07.709 [info]: Server running on port 5000
+2026-01-27 14:51:09.139 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:09.173 [info]: Server running on port 5000
+2026-01-27 14:51:16.429 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:16.465 [info]: Server running on port 5000
+2026-01-27 14:51:19.915 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:19.958 [info]: Server running on port 5000
+2026-01-27 14:51:22.531 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:22.566 [info]: Server running on port 5000
+2026-01-27 14:51:54.778 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:51:54.815 [info]: Server running on port 5000
+2026-01-27 14:52:08.966 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:08.997 [info]: Server running on port 5000
+2026-01-27 14:52:18.655 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:18.687 [info]: Server running on port 5000
+2026-01-27 14:52:21.393 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:21.441 [info]: Server running on port 5000
+2026-01-27 14:52:26.104 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:26.136 [info]: Server running on port 5000
+2026-01-27 14:52:32.649 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:32.682 [info]: Server running on port 5000
+2026-01-27 14:52:34.480 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:34.512 [info]: Server running on port 5000
+2026-01-27 14:52:39.720 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:39.751 [info]: Server running on port 5000
+2026-01-27 14:52:45.399 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:45.434 [info]: Server running on port 5000
+2026-01-27 14:52:53.090 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:53.128 [info]: Server running on port 5000
+2026-01-27 14:52:54.874 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:54.907 [info]: Server running on port 5000
+2026-01-27 14:52:57.317 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:52:57.352 [info]: Server running on port 5000
+2026-01-27 14:53:12.708 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:12.739 [info]: Server running on port 5000
+2026-01-27 14:53:35.364 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:35.399 [info]: Server running on port 5000
+2026-01-27 14:53:36.944 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:36.979 [info]: Server running on port 5000
+2026-01-27 14:53:39.101 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:39.136 [info]: Server running on port 5000
+2026-01-27 14:53:43.025 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:43.076 [info]: Server running on port 5000
+2026-01-27 14:53:57.056 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:53:57.092 [info]: Server running on port 5000
+2026-01-27 14:54:01.589 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 14:54:01.639 [info]: Server running on port 5000
+2026-01-27 14:57:13.267 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-27 14:58:16.388 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/annoucement/",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-27 14:58:56.393 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/annoucement/",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-27 14:59:46.541 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/annoucement/6978853081f724a5fc0c8d2f",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-27 15:00:04.544 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/annoucement/6978853081f724a5fc0c8d2f",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-27 15:00:57.463 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/annoucement/6978853081f724a5fc0c8d2f",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-27 15:01:07.839 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/annoucement/",
+  "statusCode": 200,
+  "responseTime": "2ms"
+}
+2026-01-27 15:01:14.954 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/annoucement/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
