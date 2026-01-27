@@ -6834,3 +6834,405 @@
   "bucket": "fetch-delivery"
 }
 2026-01-21 18:37:30.543 [info]: Server running on port 5000
+2026-01-27 11:55:54.940 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 11:55:54.975 [info]: Server running on port 5000
+2026-01-27 11:56:00.392 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 11:56:00.425 [info]: Server running on port 5000
+2026-01-27 11:56:06.682 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 11:56:06.713 [info]: Server running on port 5000
+2026-01-27 12:12:13.080 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:12:13.124 [info]: Server running on port 5000
+2026-01-27 12:16:43.671 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:16:43.704 [info]: Server running on port 5000
+2026-01-27 12:16:51.001 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:16:51.033 [info]: Server running on port 5000
+2026-01-27 12:19:01.244 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:19:01.277 [info]: Server running on port 5000
+2026-01-27 12:19:07.361 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:19:07.394 [info]: Server running on port 5000
+2026-01-27 12:19:11.835 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:19:11.868 [info]: Server running on port 5000
+2026-01-27 12:19:14.984 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:19:15.017 [info]: Server running on port 5000
+2026-01-27 12:22:08.823 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:22:08.856 [info]: Server running on port 5000
+2026-01-27 12:24:20.911 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:24:20.943 [info]: Server running on port 5000
+2026-01-27 12:26:23.896 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 12:26:23.928 [info]: Server running on port 5000
+2026-01-27 12:33:40.622 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/auth/profile",
+  "statusCode": 401,
+  "responseTime": "5ms"
+}
+2026-01-27 12:33:51.579 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/admin/auth/login",
+  "statusCode": 200,
+  "responseTime": "117ms"
+}
+2026-01-27 12:34:06.606 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/auth/profile",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-27 12:34:15.081 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/auth/profile/",
+  "statusCode": 401,
+  "responseTime": "0ms"
+}
+2026-01-27 12:34:34.107 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 401,
+  "responseTime": "2ms"
+}
+2026-01-27 12:35:51.133 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-27 12:35:56.346 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "88ms"
+}
+2026-01-27 12:36:12.684 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-27 12:36:35.182 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/admin/auth/profile/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 13:06:00.874 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 400,
+  "responseTime": "6ms"
+}
+2026-01-27 13:06:31.455 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 200,
+  "responseTime": "3832ms"
+}
+2026-01-27 13:07:23.172 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/verify-otp",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 13:07:37.573 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "81ms"
+}
+2026-01-27 13:11:50.961 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 13:12:20.997 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:12:21.030 [info]: Server running on port 5000
+2026-01-27 13:12:22.836 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:12:22.870 [info]: Server running on port 5000
+2026-01-27 13:12:28.716 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:12:28.749 [info]: Server running on port 5000
+2026-01-27 13:16:46.120 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:16:46.152 [info]: Server running on port 5000
+2026-01-27 13:17:28.283 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 200,
+  "responseTime": "3494ms"
+}
+2026-01-27 13:18:37.518 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/verify-otp",
+  "statusCode": 200,
+  "responseTime": "9ms"
+}
+2026-01-27 13:18:53.261 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "87ms"
+}
+2026-01-27 13:19:11.954 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-27 13:24:03.186 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:24:03.219 [info]: Server running on port 5000
+2026-01-27 13:24:31.651 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 500,
+  "responseTime": "113ms"
+}
+2026-01-27 13:26:42.586 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:26:42.620 [info]: Server running on port 5000
+2026-01-27 13:27:08.548 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:27:08.580 [info]: Server running on port 5000
+2026-01-27 13:27:16.703 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/signup",
+  "statusCode": 200,
+  "responseTime": "3538ms"
+}
+2026-01-27 13:28:05.842 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/verify-otp",
+  "statusCode": 200,
+  "responseTime": "9ms"
+}
+2026-01-27 13:28:29.831 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "82ms"
+}
+2026-01-27 13:28:48.705 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-27 13:33:30.697 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:33:30.731 [info]: Server running on port 5000
+2026-01-27 13:35:09.155 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:09.186 [info]: Server running on port 5000
+2026-01-27 13:35:36.921 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:36.953 [info]: Server running on port 5000
+2026-01-27 13:35:47.877 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:47.909 [info]: Server running on port 5000
+2026-01-27 13:35:50.760 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:50.793 [info]: Server running on port 5000
+2026-01-27 13:35:53.914 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:53.947 [info]: Server running on port 5000
+2026-01-27 13:35:56.557 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-27 13:35:56.590 [info]: Server running on port 5000
+2026-01-27 13:36:02.976 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "14ms"
+}
+2026-01-27 13:37:48.388 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "21ms"
+}
+2026-01-27 13:39:25.360 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/courses/697871eac78cca08b9bb959b",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}
+2026-01-27 13:39:53.094 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/courses/697871eac78cca08b9bb959b",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-27 13:39:59.979 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-27 13:40:05.167 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-27 13:41:21.141 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/stats",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}

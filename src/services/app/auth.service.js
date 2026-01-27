@@ -4,8 +4,8 @@ import jwt from "jsonwebtoken";
 import CustomError from "../../utils/CustomError.js";
 import { sendOtpEmail } from "../../utils/emails.js";
 
-/* SIGNUP */
-export const signup = async ({ name, email, password }) => {
+/* ================= SIGNUP ================= */
+export const signup = async ({ name, email, password, role }) => {
   const exists = await User.findOne({ email });
   if (exists) throw new CustomError("User already exists", 400);
 
@@ -16,6 +16,7 @@ export const signup = async ({ name, email, password }) => {
     name,
     email,
     password: hash,
+    role: role || "student",   // 👈 default student if not provided
     forgotOtp: otp,
     forgotOtpExpiry: Date.now() + 10 * 60 * 1000,
     isVerified: false,
@@ -23,6 +24,9 @@ export const signup = async ({ name, email, password }) => {
 
   await sendOtpEmail(email, otp);
 };
+
+
+/* ================= VERIFY OTP ================= */
 export const verifyOtpCommon = async ({ email, otp, purpose }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);
@@ -34,17 +38,14 @@ export const verifyOtpCommon = async ({ email, otp, purpose }) => {
     throw new CustomError("Invalid or expired OTP", 400);
   }
 
-  // SIGNUP FLOW
   if (purpose === "SIGNUP") {
     user.isVerified = true;
   }
 
-  // clear OTP
   user.forgotOtp = null;
   user.forgotOtpExpiry = null;
   await user.save();
 
-  // reset token ONLY for forgot password
   if (purpose === "FORGOT_PASSWORD") {
     const resetToken = jwt.sign(
       { id: user._id },
@@ -56,10 +57,9 @@ export const verifyOtpCommon = async ({ email, otp, purpose }) => {
 
   return null;
 };
-;
 
 
-/* LOGIN */
+/* ================= LOGIN ================= */
 export const login = async ({ email, password }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);
@@ -76,12 +76,15 @@ export const login = async ({ email, password }) => {
   user.lastLogin = new Date();
   await user.save();
 
-  return jwt.sign({ id: user._id }, process.env.USER_JWT_SECRET, {
-    expiresIn: "7d",
-  });
+  return jwt.sign(
+    { id: user._id, role: user.role },   // 👈 ROLE ADDED HERE
+    process.env.USER_JWT_SECRET,
+    { expiresIn: "7d" }
+  );
 };
 
-/* FORGOT PASSWORD */
+
+/* ================= FORGOT PASSWORD ================= */
 export const forgotPassword = async ({ email }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);
@@ -95,9 +98,11 @@ export const forgotPassword = async ({ email }) => {
   await sendOtpEmail(email, otp);
 };
 
-/* RESET PASSWORD */
+
+/* ================= RESET PASSWORD ================= */
 export const resetPassword = async ({ token, password }) => {
   const decoded = jwt.verify(token, process.env.FORGOT_PASSWORD_SECRET);
+
   const user = await User.findById(decoded.id);
   if (!user) throw new CustomError("User not found", 404);
 
@@ -105,7 +110,8 @@ export const resetPassword = async ({ token, password }) => {
   await user.save();
 };
 
-/* DELETE PROFILE */
+
+/* ================= DELETE PROFILE ================= */
 export const deleteProfile = async ({ email }) => {
   const user = await User.findOne({ email });
   if (!user) throw new CustomError("User not found", 404);

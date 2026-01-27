@@ -6,6 +6,11 @@ const userSchema = new mongoose.Schema(
     email: { type: String, unique: true },
     password: String,
 
+    role: {
+      type: String,
+      enum: ["instructor", "student"],
+      default: "student"
+    },
     isVerified: { type: Boolean, default: false },
     isActive: { type: Boolean, default: true },
     isDeleted: { type: Boolean, default: false },
@@ -19,9 +24,10 @@ const userSchema = new mongoose.Schema(
     createdOn: { type: Date, default: Date.now },
     updatedOn: { type: Date }
   },
-  
 
-  { timestamps: true ,
+
+  {
+    timestamps: true,
     collection: "users"
 
   },

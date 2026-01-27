@@ -5,9 +5,11 @@ const courseSchema = new mongoose.Schema(
     title: {
       type: String,
       required: true,
+      trim: true
     },
     description: {
       type: String,
+      trim: true
     },
     price: {
       type: Number,
@@ -15,6 +17,11 @@ const courseSchema = new mongoose.Schema(
     },
     thumbnail: {
       type: String,
+    },
+    status: {
+      type: String,
+      enum: ["draft", "published"],
+      default: "draft"
     },
     instructorId: {
       type: mongoose.Schema.Types.ObjectId,
