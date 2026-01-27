@@ -1,4 +1,4 @@
-import Announcement from "../../../models/instructor/annocement.model.js";
+import Announcement from "../../../models/instructor/annoucement.model.js";
 import CustomError from "../../../utils/CustomError.js";
 
 /* Create */

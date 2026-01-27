@@ -7,24 +7,39 @@ import {
 } from "../../../services/instructor/courses/courses.service.js";
 
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
+import uploadFileToS3 from "../../../utils/s3.utils.js";
 
-/* Create Course */
+
+/* ================= CREATE COURSE ================= */
 export const createCourse = async (req, res) => {
   try {
     const instructorId = req.user.id;
 
-    const course = await createCourseService(req.body, instructorId);
+    let thumbnailUrl = null;
+
+    if (req.file) {
+      thumbnailUrl = await uploadFileToS3(req.file);
+    }
+
+    const courseData = {
+      ...req.body,
+      thumbnail: thumbnailUrl,
+    };
+
+    const course = await createCourseService(courseData, instructorId);
 
     return successResponse(res, {
       message: "Course created successfully",
       data: course,
     });
+
   } catch (err) {
     return errorResponse(res, err);
   }
 };
 
-/* Get Courses */
+
+/* ================= GET COURSES ================= */
 export const getInstructorCourses = async (req, res) => {
   try {
     const instructorId = req.user.id;
@@ -33,33 +48,43 @@ export const getInstructorCourses = async (req, res) => {
     const courses = await getInstructorCoursesService(instructorId, search);
 
     return successResponse(res, { data: courses });
+
   } catch (err) {
     return errorResponse(res, err);
   }
 };
 
-/* Update Course */
+
+/* ================= UPDATE COURSE ================= */
 export const updateCourse = async (req, res) => {
   try {
     const instructorId = req.user.id;
     const { id } = req.params;
 
+    let updateData = { ...req.body };
+
+    if (req.file) {
+      updateData.thumbnail = await uploadFileToS3(req.file);
+    }
+
     const updatedCourse = await updateCourseService(
       id,
       instructorId,
-      req.body
+      updateData
     );
 
     return successResponse(res, {
       message: "Course updated successfully",
       data: updatedCourse,
     });
+
   } catch (err) {
     return errorResponse(res, err);
   }
 };
 
-/* Delete Course */
+
+/* ================= DELETE COURSE ================= */
 export const deleteCourse = async (req, res) => {
   try {
     const instructorId = req.user.id;
@@ -70,12 +95,14 @@ export const deleteCourse = async (req, res) => {
     return successResponse(res, {
       message: "Course deleted successfully",
     });
+
   } catch (err) {
     return errorResponse(res, err);
   }
 };
 
-/* Course Stats */
+
+/* ================= COURSE STATS ================= */
 export const getCourseStats = async (req, res) => {
   try {
     const instructorId = req.user.id;
@@ -83,6 +110,7 @@ export const getCourseStats = async (req, res) => {
     const stats = await getCourseStatsService(instructorId);
 
     return successResponse(res, { data: stats });
+
   } catch (err) {
     return errorResponse(res, err);
   }
