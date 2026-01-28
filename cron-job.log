@@ -8248,3 +8248,185 @@
   "bucket": "fetch-delivery"
 }
 2026-01-27 18:50:12.730 [info]: Server running on port 5000
+2026-01-28 11:40:40.552 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 11:40:40.593 [info]: Server running on port 5000
+2026-01-28 11:40:46.184 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 401,
+  "responseTime": "4ms"
+}
+2026-01-28 11:40:53.829 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 404,
+  "responseTime": "24ms"
+}
+2026-01-28 11:41:02.861 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-28 11:41:38.957 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 404,
+  "responseTime": "5ms"
+}
+2026-01-28 11:43:40.133 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 404,
+  "responseTime": "4ms"
+}
+2026-01-28 12:05:34.569 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/auth/profile",
+  "statusCode": 200,
+  "responseTime": "12ms"
+}
+2026-01-28 12:06:08.799 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-28 12:55:22.299 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 12:55:22.337 [info]: Server running on port 5000
+2026-01-28 12:56:17.806 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 12:56:17.842 [info]: Server running on port 5000
+2026-01-28 12:59:55.554 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 12:59:55.591 [info]: Server running on port 5000
+2026-01-28 13:00:04.606 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:00:04.641 [info]: Server running on port 5000
+2026-01-28 13:05:22.855 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:05:22.893 [info]: Server running on port 5000
+2026-01-28 13:20:55.460 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:20:55.500 [info]: Server running on port 5000
+2026-01-28 13:21:14.463 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:21:14.495 [info]: Server running on port 5000
+2026-01-28 13:21:48.619 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:21:48.660 [info]: Server running on port 5000
+2026-01-28 13:46:52.309 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:46:52.341 [info]: Server running on port 5000
+2026-01-28 13:52:51.055 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:52:51.090 [info]: Server running on port 5000
+2026-01-28 13:52:54.269 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:52:54.307 [info]: Server running on port 5000
+2026-01-28 13:53:09.902 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:53:09.933 [info]: Server running on port 5000
+2026-01-28 13:53:14.208 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:53:14.242 [info]: Server running on port 5000
+2026-01-28 13:54:21.126 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:54:21.157 [info]: Server running on port 5000
+2026-01-28 13:54:26.506 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:54:26.539 [info]: Server running on port 5000
+2026-01-28 13:55:30.161 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 13:55:30.193 [info]: Server running on port 5000
+2026-01-28 15:40:59.036 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 15:40:59.083 [info]: Server running on port 5000
+2026-01-28 18:46:16.278 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 18:46:16.315 [info]: Server running on port 5000
+2026-01-28 18:46:26.103 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 18:46:26.137 [info]: Server running on port 5000
+2026-01-28 18:46:34.676 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-28 18:46:34.712 [info]: Server running on port 5000

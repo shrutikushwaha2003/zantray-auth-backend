@@ -5,6 +5,8 @@ import {
   updateCourse,
   deleteCourse,
   getCourseStats,
+  getFullCourseTree,
+  publishCourse,
 } from "../../controllers/instructor/courses/courses.controller.js";
 
 import auth from "../../middleware/auth.middleware.js";
@@ -26,6 +28,20 @@ router.get(
   auth("user"),
   role("instructor"),
   getCourseStats
+);
+
+router.get(
+  "/:id/full",
+  auth("user"),
+  role("instructor"),
+  getFullCourseTree
+);
+
+router.patch(
+  "/:id/publish",
+  auth("user"),
+  role("instructor"),
+  publishCourse
 );
 
 router.get(
@@ -51,3 +67,6 @@ router.delete(
 );
 
 export default router;
+
+
+

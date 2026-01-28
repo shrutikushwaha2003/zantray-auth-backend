@@ -11,9 +11,20 @@ const courseSchema = new mongoose.Schema(
       type: String,
       trim: true
     },
+    category: {
+      type: String,
+      enum: ["Development", "Design", "Business", "Marketing", "AI"],
+      required: true
+    },
+    difficultyLevel: {
+      type: String,
+      enum: ["Beginner", "Intermediate", "Advanced"],
+      required: true
+    },
     price: {
       type: Number,
       default: 0,
+      min: 0
     },
     thumbnail: {
       type: String,
@@ -31,5 +42,9 @@ const courseSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+courseSchema.index({ instructorId: 1 });
+courseSchema.index({ category: 1 });
+courseSchema.index({ difficultyLevel: 1 });
 
 export default mongoose.model("Course", courseSchema);

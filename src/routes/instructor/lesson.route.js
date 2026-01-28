@@ -1,10 +1,10 @@
 import express from "express";
 import {
-    createLecture,
-    getLecturesByCourse,
-    updateLecture,
-    deleteLecture,
-} from "../../controllers/instructor/lecture/lecture.controller.js";
+    createLesson,
+    getLessonsByCourse,
+    updateLesson,
+    deleteLesson,
+} from "../../controllers/instructor/lesson/lesson.controller.js";
 
 import auth from "../../middleware/auth.middleware.js";
 import role from "../../middleware/role.middleware.js";
@@ -17,13 +17,13 @@ router.post(
     auth("user"),
     role("instructor"),
     upload.single("video"),
-    createLecture
+    createLesson
 );
 
 router.get(
     "/:courseId",
     auth("user"),
-    getLecturesByCourse
+    getLessonsByCourse
 );
 
 router.put(
@@ -31,14 +31,14 @@ router.put(
     auth("user"),
     role("instructor"),
     upload.single("video"),
-    updateLecture
+    updateLesson
 );
 
 router.delete(
     "/:id",
     auth("user"),
     role("instructor"),
-    deleteLecture
+    deleteLesson
 );
 
 export default router;

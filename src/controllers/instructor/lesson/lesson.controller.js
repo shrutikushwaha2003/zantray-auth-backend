@@ -1,14 +1,14 @@
 import {
-  createLectureService,
-  getLecturesByCourseService,
-  updateLectureService,
-  deleteLectureService,
-} from "../../../services/instructor/lecture/lecture.service.js";
+  createLessonService,
+  getLessonsByModuleService,
+  updateLessonService,
+  deleteLessonService,
+} from "../../../services/instructor/lesson/lesson.service.js";
 
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
 import  uploadFileToS3  from "../../../utils/s3.utils.js";
 
-export const createLecture = async (req, res) => {
+export const createLesson = async (req, res) => {
   try {
     const { courseId } = req.params;
     const instructorId = req.user.id;
@@ -19,7 +19,7 @@ export const createLecture = async (req, res) => {
 
     const videoUrl = await uploadFileToS3(req.file);
 
-    const lecture = await createLectureService(
+    const lesson = await createLessonService(
       courseId,
       {
         ...req.body,
@@ -29,8 +29,8 @@ export const createLecture = async (req, res) => {
     );
 
     return successResponse(res, {
-      message: "Lecture created successfully",
-      data: lecture,
+      message: "Lesson created successfully",
+      data: lesson,
     });
   } catch (error) {
     return errorResponse(res, error);
@@ -39,14 +39,14 @@ export const createLecture = async (req, res) => {
 
 
 /* ================= GET BY COURSE ================= */
-export const getLecturesByCourse = async (req, res) => {
+export const getLessonsByCourse = async (req, res) => {
   try {
     const { courseId } = req.params;
 
-    const lectures = await getLecturesByCourseService(courseId);
+    const lectures = await getLessonsByModuleService(courseId);
 
     return successResponse(res, {
-      message: "Lectures fetched successfully",
+      message: "Lesson fetched successfully",
       data: lectures,
     });
   } catch (error) {
@@ -56,7 +56,7 @@ export const getLecturesByCourse = async (req, res) => {
 
 
 /* ================= UPDATE ================= */
-export const updateLecture = async (req, res) => {
+export const updateLesson = async (req, res) => {
   try {
     const { id } = req.params;
     const instructorId = req.user.id;
@@ -64,12 +64,12 @@ export const updateLecture = async (req, res) => {
     let videoUrl;
 
     if (req.file) {
-      const key = `lectures/${Date.now()}-${req.file.originalname}`;
+      const key = `lesson/${Date.now()}-${req.file.originalname}`;
       const uploadResult = await uploadFileToS3(req.file, key);
       videoUrl = uploadResult.Location;
     }
 
-    const updatedLecture = await updateLectureService(
+    const updatedLesson = await updateLessonService(
       id,
       instructorId,
       {
@@ -79,8 +79,8 @@ export const updateLecture = async (req, res) => {
     );
 
     return successResponse(res, {
-      message: "Lecture updated successfully",
-      data: updatedLecture,
+      message: "Lesson updated successfully",
+      data: updatedLesson,
     });
   } catch (error) {
     return errorResponse(res, error);
@@ -89,15 +89,15 @@ export const updateLecture = async (req, res) => {
 
 
 /* ================= DELETE ================= */
-export const deleteLecture = async (req, res) => {
+export const deleteLesson = async (req, res) => {
   try {
     const { id } = req.params;
     const instructorId = req.user.id;
 
-    await deleteLectureService(id, instructorId);
+    await deleteLessonService(id, instructorId);
 
     return successResponse(res, {
-      message: "Lecture deleted successfully",
+      message: "Lesson deleted successfully",
     });
   } catch (error) {
     return errorResponse(res, error);

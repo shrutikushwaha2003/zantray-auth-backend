@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const lectureSchema = new mongoose.Schema(
+const lessonSchema = new mongoose.Schema(
     {
         title: {
             type: String,
@@ -19,7 +19,7 @@ const lectureSchema = new mongoose.Schema(
         },
 
         duration: {
-            type: Number // in minutes or seconds
+            type: Number,// seconds
         },
 
         order: {
@@ -48,4 +48,4 @@ const lectureSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-export default mongoose.model("Lecture", lectureSchema);
+export default mongoose.model("Lesson", lessonSchema);
