@@ -5,6 +5,7 @@ import connectDB from "./config/db.js";
 import authRoutes from "./routes/app/auth.route.js";
 import adminRoutes from "./routes/index.js";
 
+
 import errorHandler from "./middleware/error.middleware.js";
 import requestLogger from "./middleware/request-logger.middleware.js";
 

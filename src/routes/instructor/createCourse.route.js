@@ -7,7 +7,7 @@ import {
   getCourseStats,
   getFullCourseTree,
   publishCourse,
-} from "../../controllers/instructor/courses/courses.controller.js";
+} from "../../controllers/instructor/courses/createCourses.controller.js";
 
 import auth from "../../middleware/auth.middleware.js";
 import role from "../../middleware/role.middleware.js";
@@ -15,6 +15,7 @@ import upload from "../../middleware/upload.middleware.js";
 
 const router = express.Router();
 
+/* ================= CREATE COURSE (Nested + Thumbnail) ================= */
 router.post(
   "/",
   auth("user"),
@@ -23,6 +24,7 @@ router.post(
   createCourse
 );
 
+/* ================= COURSE STATS ================= */
 router.get(
   "/stats",
   auth("user"),
@@ -30,6 +32,7 @@ router.get(
   getCourseStats
 );
 
+/* ================= FULL COURSE TREE ================= */
 router.get(
   "/:id/full",
   auth("user"),
@@ -37,6 +40,7 @@ router.get(
   getFullCourseTree
 );
 
+/* ================= PUBLISH COURSE ================= */
 router.patch(
   "/:id/publish",
   auth("user"),
@@ -44,6 +48,7 @@ router.patch(
   publishCourse
 );
 
+/* ================= GET ALL COURSES ================= */
 router.get(
   "/",
   auth("user"),
@@ -51,6 +56,7 @@ router.get(
   getInstructorCourses
 );
 
+/* ================= UPDATE COURSE ================= */
 router.put(
   "/:id",
   auth("user"),
@@ -59,6 +65,7 @@ router.put(
   updateCourse
 );
 
+/* ================= DELETE COURSE ================= */
 router.delete(
   "/:id",
   auth("user"),
@@ -67,6 +74,3 @@ router.delete(
 );
 
 export default router;
-
-
-

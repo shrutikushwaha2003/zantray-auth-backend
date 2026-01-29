@@ -31,8 +31,12 @@ export const createModule = async (req, res) => {
 export const getModulesByCourse = async (req, res) => {
   try {
     const { courseId } = req.params;
+    const instructorId = req.user.id;
 
-    const modules = await getModulesByCourseService(courseId);
+    const modules = await getModulesByCourseService(
+      courseId,
+      instructorId
+    );
 
     return successResponse(res, {
       message: "Modules fetched successfully",
@@ -42,6 +46,7 @@ export const getModulesByCourse = async (req, res) => {
     return errorResponse(res, error);
   }
 };
+
 
 /* Delete Module */
 export const deleteModule = async (req, res) => {

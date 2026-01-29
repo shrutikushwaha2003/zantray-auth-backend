@@ -6,11 +6,11 @@ import {
 } from "../../../services/instructor/lesson/lesson.service.js";
 
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
-import  uploadFileToS3  from "../../../utils/s3.utils.js";
+import uploadFileToS3 from "../../../utils/s3.utils.js";
 
 export const createLesson = async (req, res) => {
   try {
-    const { courseId } = req.params;
+    const { moduleId } = req.params;
     const instructorId = req.user.id;
 
     if (!req.file) {
@@ -20,7 +20,7 @@ export const createLesson = async (req, res) => {
     const videoUrl = await uploadFileToS3(req.file);
 
     const lesson = await createLessonService(
-      courseId,
+      moduleId,
       {
         ...req.body,
         videoUrl,
@@ -32,63 +32,60 @@ export const createLesson = async (req, res) => {
       message: "Lesson created successfully",
       data: lesson,
     });
+
   } catch (error) {
     return errorResponse(res, error);
   }
 };
 
-
-/* ================= GET BY COURSE ================= */
-export const getLessonsByCourse = async (req, res) => {
+export const getLessonsByModule = async (req, res) => {
   try {
-    const { courseId } = req.params;
+    const { moduleId } = req.params;
+    const instructorId = req.user.id;
 
-    const lectures = await getLessonsByModuleService(courseId);
+    const lessons = await getLessonsByModuleService(
+      moduleId,
+      instructorId
+    );
 
     return successResponse(res, {
-      message: "Lesson fetched successfully",
-      data: lectures,
+      message: "Lessons fetched successfully",
+      data: lessons,
     });
+
   } catch (error) {
     return errorResponse(res, error);
   }
 };
 
-
-/* ================= UPDATE ================= */
 export const updateLesson = async (req, res) => {
   try {
     const { id } = req.params;
     const instructorId = req.user.id;
 
-    let videoUrl;
+    let updateData = { ...req.body };
 
     if (req.file) {
-      const key = `lesson/${Date.now()}-${req.file.originalname}`;
-      const uploadResult = await uploadFileToS3(req.file, key);
-      videoUrl = uploadResult.Location;
+      const videoUrl = await uploadFileToS3(req.file);
+      updateData.videoUrl = videoUrl;
     }
 
-    const updatedLesson = await updateLessonService(
+    const lesson = await updateLessonService(
       id,
       instructorId,
-      {
-        ...req.body,
-        ...(videoUrl && { videoUrl }),
-      }
+      updateData
     );
 
     return successResponse(res, {
       message: "Lesson updated successfully",
-      data: updatedLesson,
+      data: lesson,
     });
+
   } catch (error) {
     return errorResponse(res, error);
   }
 };
 
-
-/* ================= DELETE ================= */
 export const deleteLesson = async (req, res) => {
   try {
     const { id } = req.params;
@@ -99,6 +96,7 @@ export const deleteLesson = async (req, res) => {
     return successResponse(res, {
       message: "Lesson deleted successfully",
     });
+
   } catch (error) {
     return errorResponse(res, error);
   }

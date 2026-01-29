@@ -1,5 +1,5 @@
 import Module from "../../../models/instructor/module.model.js";
-import Course from "../../../models/instructor/courses.model.js";
+import Course from "../../../models/instructor/createCourse.model.js";
 import Lesson from "../../../models/instructor/lesson.model.js";
 import CustomError from "../../../utils/CustomError.js";
 

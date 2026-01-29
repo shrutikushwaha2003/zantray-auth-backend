@@ -8430,3 +8430,923 @@
   "bucket": "fetch-delivery"
 }
 2026-01-28 18:46:34.712 [info]: Server running on port 5000
+2026-01-29 10:53:29.552 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 10:53:29.596 [info]: Server running on port 5000
+2026-01-29 11:02:55.450 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:02:55.485 [info]: Server running on port 5000
+2026-01-29 11:06:01.695 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:06:01.740 [info]: Server running on port 5000
+2026-01-29 11:07:02.160 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:07:02.203 [info]: Server running on port 5000
+2026-01-29 11:07:30.978 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:07:31.025 [info]: Server running on port 5000
+2026-01-29 11:08:26.212 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:08:26.251 [info]: Server running on port 5000
+2026-01-29 11:16:57.369 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/annoucement/",
+  "statusCode": 500,
+  "responseTime": "9ms"
+}
+2026-01-29 11:22:19.408 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:22:19.445 [info]: Server running on port 5000
+2026-01-29 11:22:46.350 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "11ms"
+}
+2026-01-29 11:25:24.473 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:25:24.509 [info]: Server running on port 5000
+2026-01-29 11:25:29.372 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 11:25:55.341 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:25:55.378 [info]: Server running on port 5000
+2026-01-29 11:26:04.098 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "15ms"
+}
+2026-01-29 11:28:01.054 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "4ms"
+}
+2026-01-29 11:28:08.257 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "3ms"
+}
+2026-01-29 11:29:34.410 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:29:34.447 [info]: Server running on port 5000
+2026-01-29 11:29:40.271 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:29:40.310 [info]: Server running on port 5000
+2026-01-29 11:29:45.221 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:29:45.260 [info]: Server running on port 5000
+2026-01-29 11:29:52.999 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 200,
+  "responseTime": "27ms"
+}
+2026-01-29 11:32:01.126 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:32:01.162 [info]: Server running on port 5000
+2026-01-29 11:32:05.990 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:32:06.028 [info]: Server running on port 5000
+2026-01-29 11:32:12.135 [error]: S3 upload error
+{
+  "error": "Cannot read properties of undefined (reading 'replace')"
+}
+2026-01-29 11:32:12.140 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "13ms"
+}
+2026-01-29 11:32:30.843 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:32:30.878 [info]: Server running on port 5000
+2026-01-29 11:33:05.215 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:33:05.271 [info]: Server running on port 5000
+2026-01-29 11:33:06.880 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:33:06.916 [info]: Server running on port 5000
+2026-01-29 11:36:08.550 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:36:08.590 [info]: Server running on port 5000
+2026-01-29 11:36:16.874 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "12ms"
+}
+2026-01-29 11:36:56.037 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:36:56.079 [info]: Server running on port 5000
+2026-01-29 11:37:00.480 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "9ms"
+}
+2026-01-29 11:38:05.959 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:38:05.996 [info]: Server running on port 5000
+2026-01-29 11:38:12.106 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:38:12.139 [info]: Server running on port 5000
+2026-01-29 11:38:22.983 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 11:44:10.498 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:44:10.534 [info]: Server running on port 5000
+2026-01-29 11:44:15.819 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 11:44:27.347 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:44:27.384 [info]: Server running on port 5000
+2026-01-29 11:44:32.475 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "9ms"
+}
+2026-01-29 11:45:41.197 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:45:41.233 [info]: Server running on port 5000
+2026-01-29 11:45:46.201 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "11ms"
+}
+2026-01-29 11:46:10.157 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:46:10.198 [info]: Server running on port 5000
+2026-01-29 11:49:37.558 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:49:37.593 [info]: Server running on port 5000
+2026-01-29 11:49:44.997 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:49:45.043 [info]: Server running on port 5000
+2026-01-29 11:49:47.626 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:49:47.664 [info]: Server running on port 5000
+2026-01-29 11:49:58.217 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/addDetails",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 11:57:01.635 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 11:57:01.670 [info]: Server running on port 5000
+2026-01-29 11:57:07.163 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/addDetails",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 12:10:42.386 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:10:42.422 [info]: Server running on port 5001
+2026-01-29 12:10:51.014 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:10:51.052 [info]: Server running on port 5001
+2026-01-29 12:19:57.417 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/addDetails",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 12:23:04.241 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:23:04.277 [info]: Server running on port 5001
+2026-01-29 12:23:20.858 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/addDetails",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 12:23:36.254 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:23:36.296 [info]: Server running on port 5001
+2026-01-29 12:23:56.438 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 500,
+  "responseTime": "10ms"
+}
+2026-01-29 12:29:46.912 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "statusCode": 200,
+  "responseTime": "115ms"
+}
+2026-01-29 12:30:16.665 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 200,
+  "responseTime": "14ms"
+}
+2026-01-29 12:32:10.224 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:32:10.264 [info]: Server running on port 5001
+2026-01-29 12:32:13.634 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:32:13.670 [info]: Server running on port 5001
+2026-01-29 12:32:19.501 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769670139501-topright.jpeg"
+}
+2026-01-29 12:32:21.852 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769670139501-topright.jpeg"
+}
+2026-01-29 12:32:21.870 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/announcement/",
+  "statusCode": 200,
+  "responseTime": "2377ms"
+}
+2026-01-29 12:52:42.874 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:52:42.912 [info]: Server running on port 5001
+2026-01-29 12:52:59.865 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 12:52:59.903 [info]: Server running on port 5001
+2026-01-29 12:58:04.013 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769671684012-story_photo_1"
+}
+2026-01-29 12:58:06.381 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769671684012-story_photo_1"
+}
+2026-01-29 12:58:06.408 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "2403ms"
+}
+2026-01-29 12:59:36.566 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769671776566-story_photo_1"
+}
+2026-01-29 12:59:38.538 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769671776566-story_photo_1"
+}
+2026-01-29 12:59:38.545 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "1981ms"
+}
+2026-01-29 13:02:47.809 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769671967809-story_photo_1"
+}
+2026-01-29 13:02:49.833 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769671967809-story_photo_1"
+}
+2026-01-29 13:02:49.835 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "2028ms"
+}
+2026-01-29 13:08:33.110 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:08:33.147 [info]: Server running on port 5001
+2026-01-29 13:09:21.098 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769672361098-story_photo_1"
+}
+2026-01-29 13:09:23.377 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769672361098-story_photo_1"
+}
+2026-01-29 13:09:23.388 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "2297ms"
+}
+2026-01-29 13:11:54.395 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:11:54.430 [info]: Server running on port 5001
+2026-01-29 13:11:58.597 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769672518597-story_photo_1"
+}
+2026-01-29 13:12:00.553 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769672518597-story_photo_1"
+}
+2026-01-29 13:12:00.558 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "1971ms"
+}
+2026-01-29 13:13:09.452 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769672589452-story_photo_1"
+}
+2026-01-29 13:13:11.267 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769672589452-story_photo_1"
+}
+2026-01-29 13:13:11.290 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "1841ms"
+}
+2026-01-29 13:14:53.753 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:14:53.794 [info]: Server running on port 5001
+2026-01-29 13:15:22.102 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769672722102-story_photo_1"
+}
+2026-01-29 13:15:24.232 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769672722102-story_photo_1"
+}
+2026-01-29 13:15:24.260 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "2166ms"
+}
+2026-01-29 13:18:07.482 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:18:07.519 [info]: Server running on port 5001
+2026-01-29 13:18:18.560 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:18:18.599 [info]: Server running on port 5001
+2026-01-29 13:18:25.806 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769672905806-story_photo_1"
+}
+2026-01-29 13:18:27.838 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769672905806-story_photo_1"
+}
+2026-01-29 13:18:27.917 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 500,
+  "responseTime": "2119ms"
+}
+2026-01-29 13:32:43.007 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 13:32:43.043 [info]: Server running on port 5001
+2026-01-29 13:32:48.614 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769673768614-story_photo_1"
+}
+2026-01-29 13:32:50.971 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769673768614-story_photo_1"
+}
+2026-01-29 13:32:51.007 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "2401ms"
+}
+2026-01-29 13:33:04.756 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/",
+  "statusCode": 200,
+  "responseTime": "12ms"
+}
+2026-01-29 13:33:49.745 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-29 13:33:54.733 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module",
+  "statusCode": 404,
+  "responseTime": "1ms"
+}
+2026-01-29 13:35:43.638 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/697b142af82d5f98ccf3fdd9/full",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-29 13:49:07.636 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 400,
+  "responseTime": "8ms"
+}
+2026-01-29 13:51:24.086 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-29 13:51:33.554 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/697b142af82d5f98ccf3fdd9/full",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}
+2026-01-29 13:51:49.438 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module",
+  "statusCode": 404,
+  "responseTime": "0ms"
+}
+2026-01-29 13:53:00.940 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 500,
+  "responseTime": "7ms"
+}
+2026-01-29 13:53:16.801 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-29 13:54:46.479 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "2ms"
+}
+2026-01-29 13:56:29.016 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-29 15:03:31.700 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:03:31.736 [info]: Server running on port 5001
+2026-01-29 15:03:36.868 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 500,
+  "responseTime": "8ms"
+}
+2026-01-29 15:04:34.403 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:04:34.441 [info]: Server running on port 5001
+2026-01-29 15:04:42.528 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:04:42.562 [info]: Server running on port 5001
+2026-01-29 15:04:50.359 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 200,
+  "responseTime": "20ms"
+}
+2026-01-29 15:07:01.003 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-29 15:08:33.449 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 401,
+  "responseTime": "0ms"
+}
+2026-01-29 15:08:47.880 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}
+2026-01-29 15:08:56.716 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "5ms"
+}
+2026-01-29 15:08:57.187 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "4ms"
+}
+2026-01-29 15:08:57.886 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "DELETE",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-29 15:09:15.349 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/697b142af82d5f98ccf3fdd9/full",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-29 15:13:16.833 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:13:16.868 [info]: Server running on port 5001
+2026-01-29 15:13:56.691 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lecture/6978af8cff8a487d5ad3873e",
+  "statusCode": 404,
+  "responseTime": "180ms"
+}
+2026-01-29 15:14:42.502 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lecture/697b1884f82d5f98ccf3fde7",
+  "statusCode": 404,
+  "responseTime": "143ms"
+}
+2026-01-29 15:15:28.514 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lecture/697b1884f82d5f98ccf3fde7",
+  "statusCode": 404,
+  "responseTime": "172ms"
+}
+2026-01-29 15:26:18.795 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:26:18.833 [info]: Server running on port 5001
+2026-01-29 15:26:29.312 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:26:29.351 [info]: Server running on port 5001
+2026-01-29 15:26:36.641 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 15:26:36.680 [info]: Server running on port 5001
+2026-01-29 15:39:20.587 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lecture/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "151ms"
+}
+2026-01-29 15:39:44.859 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769681384859-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-29 15:39:58.177 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769681384859-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-29 15:39:58.206 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b142af82d5f98ccf3fddb",
+  "statusCode": 404,
+  "responseTime": "13522ms"
+}
+2026-01-29 15:40:41.582 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/module/697b142af82d5f98ccf3fdd9",
+  "statusCode": 200,
+  "responseTime": "7ms"
+}
+2026-01-29 15:41:06.264 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769681466264-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-29 15:41:33.916 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769681466264-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-29 15:41:33.946 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "27867ms"
+}
+2026-01-29 15:41:48.263 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/courses/697b142af82d5f98ccf3fdd9/full",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-29 15:43:19.602 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-29 15:44:08.808 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-29 15:44:39.789 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 404,
+  "responseTime": "4ms"
+}
+2026-01-29 15:45:04.738 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-29 15:45:24.294 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/lesson/697b3255514205424a99e680",
+  "statusCode": 200,
+  "responseTime": "10ms"
+}

@@ -1,9 +1,9 @@
 import express from "express";
 import {
-    createLesson,
-    getLessonsByCourse,
-    updateLesson,
-    deleteLesson,
+  createLesson,
+  getLessonsByModule,
+  updateLesson,
+  deleteLesson,
 } from "../../controllers/instructor/lesson/lesson.controller.js";
 
 import auth from "../../middleware/auth.middleware.js";
@@ -13,32 +13,33 @@ import upload from "../../middleware/upload.middleware.js";
 const router = express.Router();
 
 router.post(
-    "/:courseId",
-    auth("user"),
-    role("instructor"),
-    upload.single("video"),
-    createLesson
+  "/:moduleId",
+  auth("user"),
+  role("instructor"),
+  upload.single("video"),
+  createLesson
 );
 
 router.get(
-    "/:courseId",
-    auth("user"),
-    getLessonsByCourse
+  "/:moduleId",
+  auth("user"),
+  role("instructor"),
+  getLessonsByModule
 );
 
 router.put(
-    "/:id",
-    auth("user"),
-    role("instructor"),
-    upload.single("video"),
-    updateLesson
+  "/:id",
+  auth("user"),
+  role("instructor"),
+  upload.single("video"),
+  updateLesson
 );
 
 router.delete(
-    "/:id",
-    auth("user"),
-    role("instructor"),
-    deleteLesson
+  "/:id",
+  auth("user"),
+  role("instructor"),
+  deleteLesson
 );
 
 export default router;

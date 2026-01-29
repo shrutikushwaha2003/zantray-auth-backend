@@ -6,13 +6,25 @@ import {
 } from "../../../services/instructor/annoucement/annoucement.service.js";
 
 import { successResponse, errorResponse } from "../../../utils/response.utils.js";
+import uploadFileToS3 from "../../../utils/s3.utils.js";
 
 /* Create */
 export const createAnnouncement = async (req, res) => {
   try {
     const userId = req.user.id;
 
-    const announcement = await createAnnouncementService(req.body, userId);
+    let imageUrl = null;
+
+    if (req.files && req.files.image) {
+      imageUrl = await uploadFileToS3(req.files.image[0]);
+    }
+
+    const data = {
+      ...req.body,
+      image: imageUrl,
+    };
+
+    const announcement = await createAnnouncementService(data, userId);
 
     return successResponse(res, {
       message: "Announcement created successfully",
@@ -22,6 +34,7 @@ export const createAnnouncement = async (req, res) => {
     return errorResponse(res, error);
   }
 };
+
 
 /* Get All */
 export const getAnnouncements = async (req, res) => {
@@ -43,10 +56,16 @@ export const updateAnnouncement = async (req, res) => {
     const { id } = req.params;
     const userId = req.user.id;
 
+    let updateData = { ...req.body };
+
+    if (req.file) {
+      updateData.image = await uploadFileToS3(req.file);
+    }
+
     const updatedAnnouncement = await updateAnnouncementService(
       id,
       userId,
-      req.body
+      updateData
     );
 
     return successResponse(res, {

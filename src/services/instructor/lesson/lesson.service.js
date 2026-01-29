@@ -2,7 +2,6 @@ import Lesson from "../../../models/instructor/lesson.model.js";
 import Module from "../../../models/instructor/module.model.js";
 import CustomError from "../../../utils/CustomError.js";
 
-/* Create Lesson */
 export const createLessonService = async (
   moduleId,
   data,
@@ -17,8 +16,13 @@ export const createLessonService = async (
     throw new CustomError("Module not found or unauthorized", 404);
   }
 
+  if (!data.title || !data.order) {
+    throw new CustomError("Title and order are required", 400);
+  }
+
   const existing = await Lesson.findOne({
     moduleId,
+    instructorId,
     order: data.order,
   });
 
@@ -36,7 +40,6 @@ export const createLessonService = async (
   return lesson;
 };
 
-/* Get Lessons by Module */
 export const getLessonsByModuleService = async (
   moduleId,
   instructorId
@@ -47,26 +50,39 @@ export const getLessonsByModuleService = async (
   }).sort({ order: 1 });
 };
 
-/* Update Lesson */
 export const updateLessonService = async (
   lessonId,
   instructorId,
   data
 ) => {
-  const lesson = await Lesson.findOneAndUpdate(
-    { _id: lessonId, instructorId },
-    data,
-    { new: true, runValidators: true }
-  );
+  const lesson = await Lesson.findOne({
+    _id: lessonId,
+    instructorId,
+  });
 
   if (!lesson) {
     throw new CustomError("Lesson not found or unauthorized", 404);
   }
 
+  if (data.order) {
+    const existing = await Lesson.findOne({
+      moduleId: lesson.moduleId,
+      instructorId,
+      order: data.order,
+      _id: { $ne: lessonId },
+    });
+
+    if (existing) {
+      throw new CustomError("Lesson order already exists", 400);
+    }
+  }
+
+  Object.assign(lesson, data);
+  await lesson.save();
+
   return lesson;
 };
 
-/* Delete Lesson */
 export const deleteLessonService = async (
   lessonId,
   instructorId
