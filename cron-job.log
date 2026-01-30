@@ -9350,3 +9350,793 @@
   "statusCode": 200,
   "responseTime": "10ms"
 }
+2026-01-29 17:02:44.347 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 17:02:44.384 [info]: Server running on port 5001
+2026-01-29 17:30:03.623 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 17:30:03.657 [info]: Server running on port 5001
+2026-01-29 17:30:05.787 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 17:30:05.838 [info]: Server running on port 5001
+2026-01-29 17:30:06.870 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 17:30:06.913 [info]: Server running on port 5001
+2026-01-29 17:40:04.172 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-29 17:40:04.210 [info]: Server running on port 5001
+2026-01-30 12:50:56.237 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:50:56.281 [info]: Server running on port 5001
+2026-01-30 12:51:16.691 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:16.726 [info]: Server running on port 5001
+2026-01-30 12:51:20.269 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:20.309 [info]: Server running on port 5001
+2026-01-30 12:51:45.773 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:45.811 [info]: Server running on port 5001
+2026-01-30 12:51:47.396 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:47.439 [info]: Server running on port 5001
+2026-01-30 12:51:51.008 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:51.050 [info]: Server running on port 5001
+2026-01-30 12:51:53.209 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:51:53.261 [info]: Server running on port 5001
+2026-01-30 12:52:09.982 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:52:10.030 [info]: Server running on port 5001
+2026-01-30 12:52:11.820 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 12:52:11.858 [info]: Server running on port 5001
+2026-01-30 12:55:58.591 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/customizer",
+  "statusCode": 404,
+  "responseTime": "3ms"
+}
+2026-01-30 12:56:42.634 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "60ms"
+}
+2026-01-30 12:57:01.408 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 12:57:14.846 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "2ms"
+}
+2026-01-30 13:00:43.268 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769758243268-bottom.jpeg"
+}
+2026-01-30 13:00:45.345 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769758243268-bottom.jpeg"
+}
+2026-01-30 13:00:45.346 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769758245345-topleft.jpeg"
+}
+2026-01-30 13:00:46.149 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769758245345-topleft.jpeg"
+}
+2026-01-30 13:00:46.164 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "2909ms"
+}
+2026-01-30 13:01:12.589 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 13:02:05.834 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 404,
+  "responseTime": "1ms"
+}
+2026-01-30 13:25:14.412 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:14.447 [info]: Server running on port 5001
+2026-01-30 13:25:18.396 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:18.438 [info]: Server running on port 5001
+2026-01-30 13:25:19.944 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:19.984 [info]: Server running on port 5001
+2026-01-30 13:25:23.905 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:23.944 [info]: Server running on port 5001
+2026-01-30 13:25:27.685 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:27.730 [info]: Server running on port 5001
+2026-01-30 13:25:34.399 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:34.446 [info]: Server running on port 5001
+2026-01-30 13:25:38.031 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:38.066 [info]: Server running on port 5001
+2026-01-30 13:25:41.247 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:41.292 [info]: Server running on port 5001
+2026-01-30 13:25:52.413 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:52.446 [info]: Server running on port 5001
+2026-01-30 13:25:57.980 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:25:58.028 [info]: Server running on port 5001
+2026-01-30 13:26:02.524 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:26:02.569 [info]: Server running on port 5001
+2026-01-30 13:26:06.900 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:26:06.936 [info]: Server running on port 5001
+2026-01-30 13:26:10.916 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:26:10.952 [info]: Server running on port 5001
+2026-01-30 13:27:45.998 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769759865997-bottom.jpeg"
+}
+2026-01-30 13:27:48.213 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769759865997-bottom.jpeg"
+}
+2026-01-30 13:27:48.214 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769759868214-topleft.jpeg"
+}
+2026-01-30 13:27:49.023 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769759868214-topleft.jpeg"
+}
+2026-01-30 13:27:49.040 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "3050ms"
+}
+2026-01-30 13:28:28.979 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 401,
+  "responseTime": "1ms"
+}
+2026-01-30 13:31:26.021 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-30 13:31:34.965 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 13:32:00.351 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:32:00.392 [info]: Server running on port 5001
+2026-01-30 13:32:04.829 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:32:04.867 [info]: Server running on port 5001
+2026-01-30 13:32:08.785 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:32:08.818 [info]: Server running on port 5001
+2026-01-30 13:32:17.227 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-30 13:33:04.883 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 500,
+  "responseTime": "6ms"
+}
+2026-01-30 13:33:13.616 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760193616-bottom.jpeg"
+}
+2026-01-30 13:33:15.490 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760193616-bottom.jpeg"
+}
+2026-01-30 13:33:15.491 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760195491-topleft.jpeg"
+}
+2026-01-30 13:33:16.200 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760195491-topleft.jpeg"
+}
+2026-01-30 13:33:16.210 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2597ms"
+}
+2026-01-30 13:41:58.372 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:41:58.414 [info]: Server running on port 5001
+2026-01-30 13:42:01.653 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:42:01.702 [info]: Server running on port 5001
+2026-01-30 13:42:04.443 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:42:04.493 [info]: Server running on port 5001
+2026-01-30 13:42:13.430 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-30 13:43:02.057 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760782057-bottom.jpeg"
+}
+2026-01-30 13:43:04.078 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760782057-bottom.jpeg"
+}
+2026-01-30 13:43:04.078 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760784078-topleft.jpeg"
+}
+2026-01-30 13:43:04.786 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760784078-topleft.jpeg"
+}
+2026-01-30 13:43:04.797 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2745ms"
+}
+2026-01-30 13:43:22.453 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760802452-bottom.jpeg"
+}
+2026-01-30 13:43:24.034 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760802452-bottom.jpeg"
+}
+2026-01-30 13:43:24.035 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760804035-jordenLee.jpeg"
+}
+2026-01-30 13:43:24.440 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760804035-jordenLee.jpeg"
+}
+2026-01-30 13:43:24.448 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2000ms"
+}
+2026-01-30 13:43:42.557 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 13:46:38.803 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769760998803-bottom.jpeg"
+}
+2026-01-30 13:46:40.498 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769760998803-bottom.jpeg"
+}
+2026-01-30 13:46:40.498 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769761000498-jordenLee.jpeg"
+}
+2026-01-30 13:46:40.904 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769761000498-jordenLee.jpeg"
+}
+2026-01-30 13:46:40.912 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2110ms"
+}
+2026-01-30 13:47:07.073 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-30 13:47:51.815 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-30 13:50:41.893 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/color",
+  "statusCode": 404,
+  "responseTime": "2ms"
+}
+2026-01-30 13:51:08.755 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 13:54:27.713 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:54:27.756 [info]: Server running on port 5001
+2026-01-30 13:54:33.450 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:54:33.483 [info]: Server running on port 5001
+2026-01-30 13:54:40.892 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-30 13:55:23.675 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:55:23.730 [info]: Server running on port 5001
+2026-01-30 13:55:32.238 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 13:55:32.280 [info]: Server running on port 5001
+2026-01-30 13:55:53.577 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-30 14:01:14.102 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 14:01:14.138 [info]: Server running on port 5001
+2026-01-30 14:01:17.224 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 14:01:17.271 [info]: Server running on port 5001
+2026-01-30 14:01:20.652 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 14:01:20.693 [info]: Server running on port 5001
+2026-01-30 14:01:50.535 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 14:01:50.576 [info]: Server running on port 5001
+2026-01-30 14:01:53.023 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-30 15:05:40.139 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 15:13:13.734 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:13:13.773 [info]: Server running on port 5001
+2026-01-30 15:13:27.017 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:13:27.056 [info]: Server running on port 5001
+2026-01-30 15:13:36.908 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:13:36.946 [info]: Server running on port 5001
+2026-01-30 15:13:55.454 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "16ms"
+}
+2026-01-30 15:14:32.144 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-30 15:18:45.418 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:18:45.466 [info]: Server running on port 5001
+2026-01-30 15:18:53.220 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:18:53.257 [info]: Server running on port 5001
+2026-01-30 15:22:06.947 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "15ms"
+}
+2026-01-30 15:22:18.035 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "8ms"
+}
+2026-01-30 15:24:56.525 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-30 15:25:15.769 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 15:26:49.197 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:26:49.254 [info]: Server running on port 5001
+2026-01-30 15:26:56.819 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "18ms"
+}
+2026-01-30 15:28:53.523 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:28:53.563 [info]: Server running on port 5001
+2026-01-30 15:29:03.630 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:29:03.668 [info]: Server running on port 5001
+2026-01-30 15:29:17.475 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:29:17.516 [info]: Server running on port 5001
+2026-01-30 15:29:25.060 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "17ms"
+}
+2026-01-30 15:38:15.809 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:38:15.846 [info]: Server running on port 5001
+2026-01-30 15:38:16.909 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:38:16.948 [info]: Server running on port 5001
+2026-01-30 15:38:21.018 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "21ms"
+}
+2026-01-30 15:40:02.109 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/colors",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
+2026-01-30 15:43:00.429 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-30 15:44:36.494 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "4ms"
+}
+2026-01-30 15:44:45.686 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/layout",
+  "statusCode": 200,
+  "responseTime": "3ms"
+}
+2026-01-30 15:45:28.087 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769768128087-bottom.jpeg"
+}
+2026-01-30 15:45:30.187 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769768128087-bottom.jpeg"
+}
+2026-01-30 15:45:30.189 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769768130188-jordenLee.jpeg"
+}
+2026-01-30 15:45:30.575 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769768130188-jordenLee.jpeg"
+}
+2026-01-30 15:45:30.583 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2503ms"
+}
+2026-01-30 15:46:04.848 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769768164848-bottom.jpeg"
+}
+2026-01-30 15:46:06.824 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769768164848-bottom.jpeg"
+}
+2026-01-30 15:46:06.825 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769768166824-jordenLee.jpeg"
+}
+2026-01-30 15:46:07.338 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769768166824-jordenLee.jpeg"
+}
+2026-01-30 15:46:07.346 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "PUT",
+  "url": "/api/instructor/customizer/branding",
+  "statusCode": 200,
+  "responseTime": "2500ms"
+}
+2026-01-30 15:47:01.375 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/customizer/",
+  "statusCode": 200,
+  "responseTime": "5ms"
+}
+2026-01-30 15:48:24.174 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 15:48:24.213 [info]: Server running on port 5001

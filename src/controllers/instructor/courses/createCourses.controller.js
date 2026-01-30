@@ -7,9 +7,14 @@ export const createCourse = async (req, res) => {
     const instructorId = req.user.id;
 
     let thumbnailUrl = null;
+    let introVideoUrl = null;
 
-    if (req.file) {
-      thumbnailUrl = await uploadFileToS3(req.file);
+    if (req.files?.thumbnail) {
+      thumbnailUrl = await uploadFileToS3(req.files.thumbnail[0]);
+    }
+
+    if (req.files?.introVideo) {
+      introVideoUrl = await uploadFileToS3(req.files.introVideo[0]);
     }
 
     let parsedModules = [];
@@ -27,6 +32,7 @@ export const createCourse = async (req, res) => {
     const courseData = {
       ...req.body,
       thumbnail: thumbnailUrl,
+      introVideo: introVideoUrl,
       modules: parsedModules,
     };
 
@@ -70,8 +76,16 @@ export const updateCourse = async (req, res) => {
 
     let updateData = { ...req.body };
 
-    if (req.file) {
-      updateData.thumbnail = await uploadFileToS3(req.file);
+    if (req.files?.thumbnail) {
+      updateData.thumbnail = await uploadFileToS3(
+        req.files.thumbnail[0]
+      );
+    }
+
+    if (req.files?.introVideo) {
+      updateData.introVideo = await uploadFileToS3(
+        req.files.introVideo[0]
+      );
     }
 
     const updatedCourse = await CourseService.updateCourse(

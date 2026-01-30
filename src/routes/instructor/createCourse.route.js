@@ -15,16 +15,17 @@ import upload from "../../middleware/upload.middleware.js";
 
 const router = express.Router();
 
-/* ================= CREATE COURSE (Nested + Thumbnail) ================= */
 router.post(
   "/",
   auth("user"),
   role("instructor"),
-  upload.single("thumbnail"),
+  upload.fields([
+    { name: "thumbnail", maxCount: 1 },
+    { name: "introVideo", maxCount: 1 }
+  ]),
   createCourse
 );
 
-/* ================= COURSE STATS ================= */
 router.get(
   "/stats",
   auth("user"),
@@ -32,7 +33,6 @@ router.get(
   getCourseStats
 );
 
-/* ================= FULL COURSE TREE ================= */
 router.get(
   "/:id/full",
   auth("user"),
@@ -40,7 +40,6 @@ router.get(
   getFullCourseTree
 );
 
-/* ================= PUBLISH COURSE ================= */
 router.patch(
   "/:id/publish",
   auth("user"),
@@ -48,7 +47,6 @@ router.patch(
   publishCourse
 );
 
-/* ================= GET ALL COURSES ================= */
 router.get(
   "/",
   auth("user"),
@@ -56,16 +54,17 @@ router.get(
   getInstructorCourses
 );
 
-/* ================= UPDATE COURSE ================= */
 router.put(
   "/:id",
   auth("user"),
   role("instructor"),
-  upload.single("thumbnail"),
+  upload.fields([
+    { name: "thumbnail", maxCount: 1 },
+    { name: "introVideo", maxCount: 1 }
+  ]),
   updateCourse
 );
 
-/* ================= DELETE COURSE ================= */
 router.delete(
   "/:id",
   auth("user"),

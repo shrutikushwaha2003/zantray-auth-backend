@@ -29,6 +29,10 @@ const courseSchema = new mongoose.Schema(
     thumbnail: {
       type: String,
     },
+    introVideo:{
+      type:String,
+
+    },
     status: {
       type: String,
       enum: ["draft", "published"],
