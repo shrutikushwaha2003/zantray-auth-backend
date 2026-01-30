@@ -19,6 +19,16 @@ export const createLessonService = async (
   if (!data.title || !data.order) {
     throw new CustomError("Title and order are required", 400);
   }
+  
+  const totalVideos = await Lesson.countDocuments({
+    moduleId,
+    instructorId,
+  });
+
+  if (totalVideos >= 10) {
+    throw new CustomError("Maximum 10 videos allowed per module", 400);
+  }
+
 
   const existing = await Lesson.findOne({
     moduleId,

@@ -10140,3 +10140,81 @@
   "bucket": "fetch-delivery"
 }
 2026-01-30 15:48:24.213 [info]: Server running on port 5001
+2026-01-30 16:31:49.520 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-01-30 16:31:49.562 [info]: Server running on port 5001
+2026-01-30 16:31:53.638 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 500,
+  "responseTime": "17ms"
+}
+2026-01-30 16:32:10.769 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 500,
+  "responseTime": "4ms"
+}
+2026-01-30 16:32:37.167 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 500,
+  "responseTime": "3ms"
+}
+2026-01-30 16:32:55.203 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "12ms"
+}
+2026-01-30 16:33:07.006 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 500,
+  "responseTime": "3ms"
+}
+2026-01-30 16:34:35.703 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 500,
+  "responseTime": "3ms"
+}
+2026-01-30 16:35:07.652 [info]: Uploading file to S3
+{
+  "fileKey": "zantray/1769771107651-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-30 16:35:20.878 [info]: File uploaded successfully
+{
+  "fileUrl": "https://fetch-delivery.s3.us-east-1.amazonaws.com/zantray/1769771107651-6209577-uhd_4096_2160_25fps.mp4"
+}
+2026-01-30 16:35:20.945 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "POST",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "13600ms"
+}
+2026-01-30 16:35:30.385 [info]: HTTP Request
+{
+  "ip": "::1",
+  "method": "GET",
+  "url": "/api/instructor/lesson/697b1884f82d5f98ccf3fde7",
+  "statusCode": 200,
+  "responseTime": "6ms"
+}
