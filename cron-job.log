@@ -10218,3 +10218,9 @@
   "statusCode": 200,
   "responseTime": "6ms"
 }
+2026-02-02 11:48:46.466 [info]: S3 configuration loaded
+{
+  "region": "us-east-1",
+  "bucket": "fetch-delivery"
+}
+2026-02-02 11:48:46.512 [info]: Server running on port 5001
